@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<Tree Name="Tree" Package="demo" Class="HTMLTree" Template="" >
+   <Node URL="http://www.yahoo.com" Target="" Caption="yahoo">
+      <Node URL="http://mail.yahoo.com" Target="" Caption="yahoo email"/>
+      <Node URL="http://finance.yahoo.com" Target="" Caption="yahoo finance">
+         <Node URL="http://finance.yahoo.com/mt?u" Target="" Caption="Today's market"/>
+         <Node URL="http://biz.yahoo.com/top.html" Target="" Caption="News"/>
+      </Node>   
+   </Node>
+   <Node URL="" Target="" Caption="Wizard tests">
+      <Node URL="controller.php?view=demo.EventNewWizardView" Target="" Caption="Create an event"/>
+      <Node URL="controller.php?view=demo.EventWizardView&amp;param:Evt_Id=EVT_2" Target="" Caption="Edit an event (Id=EVT_2)"/>
+   </Node>
+   <!--<Node Caption="" Image="" URL="" Target="" Function="loadpage|gotoview|..." Style="" >-->
+</Tree>

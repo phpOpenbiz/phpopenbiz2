@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="no"?>
+<BizDataObj Name="BOAttendeeX" Description="Attendee BizDataObj" Package="demo" Class="BizDataObj" InheritFrom="demo.BOAttendee" Table="attendee" SearchRule="" SortRule="">
+	<BizFieldList>
+	</BizFieldList>
+</BizDataObj>

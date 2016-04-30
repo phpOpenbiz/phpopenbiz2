@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMReport" Package="demo" Class="BizForm" jsClass="jbForm" Title="Events Summary" SearchRule="" Description="" BizDataObj="BOReport" PageSize="100">
+   <DisplayModes>
+      <Mode Name="READ" TemplateFile="rptlist.tpl" InitMode="" DataFormat="table" FormatStyle=""/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="id" FieldName="Id" DisplayName="Registration Id" Hidden="Y"/>
+      <BizCtrl Name="evtid" FieldName="EvtId" DisplayName="Event Id"/>
+      <BizCtrl Name="evtname" FieldName="EvtName" DisplayName="Event Name"/>
+      <BizCtrl Name="attdid" FieldName="AttendeeId" DisplayName="Attendee Id"/>
+      <BizCtrl Name="attdname" FieldName="AttdFullName" DisplayName="Attendee Name"/>
+      <BizCtrl Name="attdphone" FieldName="AttdPhone" DisplayName="Phone"/>
+      <BizCtrl Name="attdemail" FieldName="AttdEmail" DisplayName="Email"/>
+      <BizCtrl Name="attdaddr" FieldName="AttdAddress" DisplayName="Address"/>
+      <BizCtrl Name="fee" FieldName="Fee" DisplayName="Fee"/>
+   </BizCtrlList>
+   <Toolbar>
+   </Toolbar> 
+   <Navbar>
+   </Navbar> 
+</BizForm>

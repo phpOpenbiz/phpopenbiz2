@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<Tabs Name="EventTabs" Package="demo" Class="HTMLTabs" TemplateFile="subtabs.tpl">
+   <TabViews>
+      <View Name="EventAttendee" URL="" View="demo.EventView" Target="" Caption="Attendees" Icon=""/>
+      <View Name="EventRegist" URL="" View="demo.EventRegistView" Target="" Caption="Registration" Icon=""/>
+   </TabViews>
+</Tabs>

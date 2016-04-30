@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title></title>
+  <script language="javascript" src="../js/clientUtil.js"></script>
+  <style type="text/css">
+  body { background-color:#4F4F4F; margin:0 }
+  
+  a { font-size: 12px; font-family:verdana,arial,helvetica; font-weight:bold; text-decoration:none;}
+  a:link { color: #FFFFFF }
+  a:visited { color: #FFFFFF }
+  a:hover { color: yellow }
+  a:active { color: yellow }
+  
+  .item { padding: 0 10 0 10;}
+  .sp { color:white; font-size: 12px; font-family:verdana,arial,helvetica; font-weight:bold;}
+  .menu {position: absolute; left:0px; top:10px; }
+  .power { position: absolute; right:2px;top:10px; color:white; font-size: 12px; font-family:verdana,arial,helvetica; }
+  </style>
+</head>
+<body>
+<div class="menu">
+<table border="0" cellpadding="0" cellspacing="0"><tr>
+<td class="item"><a href="EvtContent.htm" target="content">Home</a></td>
+<td class="sp">|</td>
+<td class="item"><a href="javascript:GoToView('demo.EventView','','content');">Events</a></td>
+<!--<td class="item"><a href="../bin/controller.php?view=demo.EventView&form=demo.FMEvent" target="content">Events</a></td>-->
+<td class="sp">|</td>
+<td class="item"><a href="../bin/controller.php?view=demo.RegistView&form=demo.FMRegist" target="content">Registration</a></td>
+<td class="sp">|</td>
+<td class="item"><a href="../bin/controller.php?view=demo.AttendeeView" target="content">Attendee</a></td>
+<td class="sp">|</td>
+<td class="item"><a href="EvtReport.htm" target="content">Report</a></td>
+<td class="sp">|</td>
+<td class="item"><a href="../bin/controller.php?view=demo.FieldDepTestView" target="content">Test 2.1 features</a></td>
+</tr></table>
+</div>
+<div class="power">Powered by: OPEN-BIZ</div>
+<div style="position: absolute; background-color:white;left:0px;top:28px;right:10px;width:100%"><img width=1 height=1 alt=""></div>
+<div style="position: absolute; background-color:black;left:0px;top:29px;right:10px;width:100%"><img width=1 height=1 alt=""></div>
+</body>
+</html>

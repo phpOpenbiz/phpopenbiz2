@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<BizView Name="EventWizardView" Description="" Package="demo" Class="BizViewWizard" Template="view.tpl">
+   <ControlList>
+      <Control Name="wizardForm1" Form="FMNewEventWzd1"/>
+      <Control Name="wizardForm2" Form="FMNewEventWzd2"/>
+   </ControlList>
+   <Parameters>
+      <Parameter Name="" Value="" />
+   </Parameters>
+<!-- 
+wizard sample: create/edit an event
+   - form1: event name, description
+   - form2: start, end time and location   
+-->
+</BizView>

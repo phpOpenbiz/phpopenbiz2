@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<BizView Name="FieldDepTestView" Description="Field Dependency Test View" Package="demo" Class="BizView" Template="view_fmtest.tpl" AccessControl="">
+   <ControlList>
+      <Control Name="_tabs" Form="Tabs"/>
+      <Control Name="_menus" Form="Menus"/>
+      <Control Name="_tree" Form="Tree"/>
+      <Control Name="fm_test" Form="FMFieldDepTest" SubCtrls=""/>
+      <Control Name="fm_rich" Form="FMRichText" SubCtrls=""/>
+      <!--<Control Name="fm_ai" Form="FMAutoIncr" SubCtrls=""/>-->
+      <!--<Control Name="fm_ck" Form="FMCompKey" SubCtrls=""/>-->
+   </ControlList>
+</BizView>

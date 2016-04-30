@@ -1,0 +1,381 @@
+/* view, form title style*/
+.title { 
+   color:#000000; 
+   font-size: 14px; 
+   font-family:Arial; 
+   font-weight:bold; 
+   padding: 2 2 2 2 }
+   
+.title_w { 
+   color:#FFFFFF; 
+   font-size: 14px; 
+   font-family:Arial; 
+   font-weight:bold; 
+   padding: 2 2 2 2 }
+
+form {margin: 0}
+
+.active_form {
+   background-image: url(../images/tbar_bg_on.gif);
+   background-repeat: repeat-x;
+   border: 1px solid gray
+}
+
+.inactive_form {
+   background-image: url(../images/tbar_bg_gray.gif);
+   background-repeat: repeat-x;
+   border: 1px solid gray;
+   margin: 0
+}
+
+body {
+   background-image: url(../images/main_bg.jpg); 
+   margin-top: 10px;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+/* error message style */
+.error { 
+   font-size: 12px; 
+   color: red; 
+   font-family:Arial; 
+   font-weight:bold; }
+
+/* form elements style */
+input, select, textarea { 
+   border: 1px solid silver; 
+   font-family:Arial; 
+   font-size:12px; }
+input.err, select.err {
+   padding-right: 16px; 
+   border: 1px solid red; 
+   background-color: #FFFCE2; 
+   background-image: url(../images/warning_obj.gif); 
+   background-position: right; 
+   background-repeat: no-repeat;}
+textarea.err {
+   padding-right: 16px; 
+   border: 1px solid red; 
+   background-color: #FFFCE2;}
+input:focus, select:focus, textarea:focus {
+   border: 1px solid red; 
+   background-color:#EFEFEF;}
+input.nav {
+   border: 1px solid #505050; 
+   width: 60px;
+   text-align: center;
+   font-size:10px; }
+
+.nav_page {
+   width:60px;
+   font-size:10px; 
+   text-align:center; }
+
+.required {
+   font-size: 14px;
+   font-weight:bold;
+   color: red; }
+
+/* table cell style */
+/*td { font-size: 12px; font-family:Arial;}*/
+
+/* form toolbar style */
+.tbl_title {
+   background-color: silver; 
+   background-repeat: repeat-x;
+   font-size: 14px; 
+   font-family:Arial; 
+   font-weight:bold; 
+   padding: 2 2 2 2;
+   border:1px solid gray }
+
+.tbl_toolbar {
+   background-color: #EEEEEE; 
+   border-top:1px solid gray;
+   border-bottom:1px solid gray }
+
+/* -------- table style -------- */
+.tbl { 
+   font-family:Arial; 
+   font-size:12px; 
+   border:0px solid gray; 
+   background-color:#FCFCFC; 
+   width:100% }
+
+.tbl .head { 
+   background-color:#D9D9D9; 
+   background-image: url(../images/bgGray.gif);
+   background-repeat: repeat-x;
+   background-position: bottom;
+   font-family:Arial; 
+   font-size:11px; 
+   color:#000000; 
+   text-align:left; 
+   border-left:1px solid white;
+   border-top:1px solid white;
+   border-bottom:1px solid gray;
+   border-right:1px solid gray }
+
+.tbl .rowodd 
+{ background-color:#FCFCFC;}
+
+.tbl .roweven 
+{ background-color:#F0F0F0;}
+
+.tbl .rowsel 
+{ background-image: url(../images/blue_highlight.gif);
+   background-repeat: repeat-x; }
+
+.tbl .cell
+{ border-bottom:1px solid silver; }
+
+.tbl .cell_edit
+{ }
+
+/* hyperlink style */
+a { text-decoration:none; }
+a:link { color:#0000cc }
+a:visited { color:#0000cc }
+a:hover { color:#990000 }
+
+/* button style */
+.button { 
+   border:1px solid gray; 
+   background-color:#F0F0F0;
+   background-image: url(../images/bgBlue.gif);
+   background-repeat: repeat-x;
+   background-position: bottom;
+   font-family:Arial; 
+   font-size:12px; 
+   font-weight:normal; 
+   text-decoration:none; 
+   /*padding: 1 1 1 1*/}
+
+.buttonOn, .button:hover, .button:focus, .buttonOn:focus {
+	border: 1px solid blue;
+	background-color: #ffffff;
+	font-size: 12px;
+	font-weight: normal;
+	background-repeat: repeat-x;
+	background-position: top;
+	}
+/*.button { 
+   border: 1px solid #505050;
+   background-color:#F0F0F0; 
+   font-family:Arial; 
+   font-size:12px; }*/
+.button_nb { 
+   background-color:#F0F0F0; 
+   font-family:Arial; 
+   font-size:12px; }
+
+/* navigation text style */
+.nav_b { 
+   color:black; 
+   font-size: 12px; 
+   font-family:Arial }
+.nav_w { 
+   color:white; 
+   font-size: 12px; 
+   font-family:Arial }
+
+/* SAP table theme: border:#909CAE, header:#CBD5E1, column header:#DCE3EC alternating row:#E9EEF4 */
+
+/* -------- tabs style -------- */
+.tabRow {	
+		background-image : url(../images/tabRowBg.gif);
+		border-color: #999;
+	}
+	
+.currentTabLeft, .currentTabRight, .currentTab {
+	background-image : url(../images/currentTab.gif);
+		background-repeat: no-repeat;
+		/*border-color: #fff;*/
+	}
+.currentTabLeft2, .currentTabRight2, .currentTab2 {
+	background-image : url(../images/currentTab2.gif);
+		background-repeat: no-repeat;
+		/*border-color: #fff;*/
+	}
+
+	a.currentTabLink:link, a.currentTabLink:visited {
+		color: #990033;
+		}
+	a.currentTabLink:hover {
+		color: #990033;
+		}
+		
+	.otherTabLeft, .otherTabRight, .otherTab {
+		color: #333333;
+		background-image : url(../images/otherTab.gif);
+		background-repeat: no-repeat;
+		border-color: #999;
+		}
+	.otherTabFirst {
+		color: #333333;
+		background-image : url(../images/otherTabFirst.gif);
+		background-repeat: no-repeat;
+		border-color: #999;
+		}
+	a.otherTabLink:link, a.otherTabLink:visited {
+		color: #444444;
+
+		}
+	a.otherTabLink:hover {
+		color: #990033;
+		}
+		
+.tabRow {
+		height: 20px;
+		background-position: top;
+		background-repeat: repeat-x;	
+		border-bottom: solid 1px #999;
+	}
+	
+.currentTab, .currentTab2 {
+		font-size: 11px;
+		font-weight: bold;
+		padding-top: 1px;
+		padding-left: 3px;
+		padding-right: 5px;
+		padding-top: 5px;
+		background-position: top center;
+		/*border-bottom: solid 1px #fff;*/
+		}	
+	.currentTabLeft, .otherTabLeft, .currentTabLeft2, .otherTabFirst {
+		background-position: top left;
+	}		
+	.currentTabRight, .otherTabRight, .currentTabRight2 {
+		background-position: top right;
+	}
+	
+	a.currentTabLink:link, a.currentTabLink:visited {
+		text-decoration: none;
+		}
+	a.currentTabLink:hover {
+		text-decoration: none;		
+		}
+		
+	.otherTab {
+		font-size: 11px;
+		font-weight: bold;
+		padding-left: 3px;
+		padding-right: 5px;
+		padding-top: 5px;
+		background-position: top center;
+		} 
+	.otherTabRight , .otherTabLeft, .otherTab, .otherTabFirst {
+		border-bottom: solid 1px #999;
+		}
+	a.otherTabLink:link, a.otherTabLink:visited {
+		text-decoration: none;
+		padding-top: 0px;
+
+		}
+	a.otherTabLink:hover {
+		text-decoration: none;
+		}
+
+/* ----- tree style ----- */
+UL.expanded {
+	margin-left: 10; margin-top: 2; 
+	padding-left: 5;
+	display:block; 
+}
+
+UL.collapsed { 
+	margin-left: 10; margin-top: 2; 
+	padding-left: 5;
+	display: none;
+}
+
+LI.tree { 
+	margin-top:3px; 
+	list-style-image:none;
+	list-style-type:none;
+	white-space: nowrap;
+	font-size: 12px; font-family:Arial;
+}
+
+.icon {
+  border:0;
+  padding-top: 0px;
+  margin-top: 3px;
+  vertical-align: 0;
+}
+
+div.autocomplete {
+      position:absolute;
+      width:250px;
+      background-color:white;
+      border:1px solid #888;
+      margin:0px;
+      padding:0px;
+    }
+    div.autocomplete ul {
+      list-style-type:none;
+      margin:0px;
+      padding:0px;
+    }
+    div.autocomplete ul li.selected { background-color: #ffb;}
+    div.autocomplete ul li {
+      list-style-type:none;
+      display:block;
+      margin:0;
+      padding:2px;
+      height:20px;
+      cursor:pointer;
+    }
+
+th.resize-handle-active {
+	cursor: e-resize;
+}
+
+div.resize-handle {
+	cursor: e-resize;
+	width: 2px;
+	border-right: 1px dashed #1E90FF;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+ul.contextMenu, ul.contextMenu ul {
+  position:absolute;
+  visibility:hidden;
+  width: 180px;                /* sets the size of the menu blocks */
+  border: 1px solid gray;      /* puts a black border around the menu blocks */
+  background-color: #8aa;      /* makes the menu blocks mint green - a bg-color MUST be included for IE to work properly! */
+  padding-left: 0px;           /* stops the usual indent from ul */
+  cursor: default;             /* gives an arrow cursor */
+  margin-left: 0px;            /* Opera 7 final's margin and margin-box model cause problems */
+}
+ul.contextMenu li {
+  list-style-type: none;       /* removes the bullet points */
+  margin: 0px;                 /* Opera 7 puts large spacings between li elements */
+  position: relative;          /* makes the menu blocks be positioned relative to their parent menu item
+                                  the lack of offset makes these appear normal, but it will make a difference
+                                  to the absolutely positioned child blocks */
+  color: #fff;                 /* sets the default font colour to white */
+}
+ul.contextMenu a {
+  border: 1px solid #FCFCFC;
+  padding: 0 6px;
+  float: none !important; /*For Opera*/
+  display: block;
+  background: #FCFCFC;
+  color: black;
+  font: normal 11px/18px Verdana, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  height: auto !important;
+  height: 18px; /*For IE*/
+}
+ul.contextMenu a:hover,
+ul.contextMenu li:hover li a,
+ul.contextMenu li.iehover li a {
+  float: none;
+  border:1px solid #FCFCFC;
+  background: highlight;
+  color: white;
+}

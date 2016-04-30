@@ -1,0 +1,147 @@
+.calTable {
+	background-color: #BBBBBB;
+	width: 100%;
+ }
+
+.calHeader {
+   border: 1px solid #BBBBBB;
+   font-family: Arial, sans-serif;
+	font-size: 18px;
+	font-weight: Bold;
+	color: #355881;
+	padding: 6px;
+}
+
+.calEvttext {
+   padding: 3px;
+   font-family: Arial, sans-serif;
+	font-size: 10px;
+   }
+.calDayEvtBk {
+   background-color: #F0F8FF;
+   }
+
+/* Day Names Row Setup */
+.calDayNamesRow {
+    height: 20px;
+	background-color: #455678;
+	text-align: center;
+	vertical-align: middle;
+	 font-family: Arial, sans-serif; 
+	font-size: 10px; 
+	font-weight: Bold; 
+	color: #FFFFFF;
+	}
+
+.calDaynum {
+    width: 100%;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	font-weight: Bold; 
+	color: #455678;
+	text-align: right;
+	vertical-align: top;
+    padding: 2px;
+    margin: 0px;
+	}
+
+.calOtherMonth {
+    background-color: #EEEEEE;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	color: #BBBBBB;
+	}
+.calWeekday {
+	background-color: #FFFFFF;
+	height: 88px;
+	}
+.calWeekend {
+	background-color: #F0F8FF;
+	height: 88px;
+	}
+.calWeekViewday {
+	background-color: #FFFFFF;
+	height: 300px;
+	}
+.calTime {
+	background-color: #FFFFFF;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+
+.calBusy {
+   background-color: blue;
+	height: 20px;
+	width: 20px;
+}
+.calBusy_start {
+   border-left: 2px solid orange;
+   background-color: blue;
+	height: 20px;
+	width: 20px;
+}
+.calBusy_end {
+   border-right: 2px solid orange;
+   background-color: blue;
+	height: 20px;
+	width: 20px;
+}
+
+.calBusyIcon {
+   background-color: blue;
+	height: 10px;
+	width: 10px;
+	border:2px solid gray;
+}
+
+.calOverlap {
+   background-color: #993300;
+	height: 20px;
+	width: 20px;
+}
+.calOverlap_start {
+   border-left: 2px solid orange;
+   background-color: #993300;
+	height: 20px;
+	width: 20px;
+}
+.calOverlap_end {
+   border-right: 2px solid orange;
+   background-color: #993300;
+	height: 20px;
+	width: 20px;
+}
+
+.calOverlapIcon {
+   background-color: #993300;
+	height: 10px;
+	width: 10px;
+	border:2px solid gray;
+}
+
+.calNobusy {
+   background-color: white;
+	height: 20px;
+	width: 20px;
+}
+
+.calScheduleTable {
+   border:1px solid gray; background-color:silver; width=100%;
+   font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+.calScheduleName {
+   background-color: #D9D9D9;
+   font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+.calStatus {
+   font-family: Arial, sans-serif;
+	font-size: 12px;
+}

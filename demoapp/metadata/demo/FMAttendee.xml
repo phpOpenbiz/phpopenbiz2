@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizForm Name="FMAttendee" Package="demo" Class="BizForm" jsClass="jbForm" Title="Attendee" SearchRule="" Description="Attendee BizForm" BizDataObj="BOAttendeeX" PageSize="5" Stateless="">
+   <DisplayModes>
+      <Mode Name="QUERY" TemplateFile="edit.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="EDIT" TemplateFile="edit.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="NEW" TemplateFile="edit.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="READ" TemplateFile="list.tpl" InitMode="" DataFormat="block" FormatStyle="tbl"/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="attd_id" FieldName="Id" DisplayName="Attendee Id" Enabled="N"/>
+      <BizCtrl Name="attd_fname" FieldName="FirstName" DisplayName="First Name" Sortable="Y"/>
+      <BizCtrl Name="attd_lname" FieldName="LastName" DisplayName="Last Name"/>
+      <BizCtrl Name="attd_oname" FieldName="OtherName" DisplayName="Other Name"/>
+      <BizCtrl Name="attd_fullname" FieldName="FullName" DisplayName="Full Name"/>
+      <BizCtrl Name="attd_phone" FieldName="Phone" DisplayName="Phone"/>
+      <BizCtrl Name="attd_email" FieldName="Email" DisplayName="Email" Required="Y" HTMLAttr="required='1' regexp='JSVAL_RX_EMAIL'"/>
+      <BizCtrl Name="attd_address" FieldName="Address" DisplayName="Address" Type="Text" Width="200" Height="50"/>
+      <BizCtrl Name="attd_type" FieldName="Type" DisplayName="Type" SelectFrom="Selection(AttdType)"/>
+      <BizCtrl Name="attd_desc" FieldName="Description" DisplayName="Description" Type="RichText" Width="200" Height="50" Style="border:1px solid gray;"/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_search" Image="search.gif" Caption="Search" Type="Button" Width="" Height="" HTMLAttr="" Function="SearchRecord()" Style="" Enabled="" DisplayMode="READ"/>
+      <Control Name="btn_dosearch" Image="" Caption="Search" Type="button" Width="" Height="" HTMLAttr="" Function="RunSearch()" Style="" Enabled="" DisplayMode="QUERY"/>
+      <Control Name="btn_edit" Image="edit.gif" Caption="Edit" Type="Button" Width="" Height="" HTMLAttr="" Function="EditRecord()" Style="" Enabled="" DisplayMode="READ"/>
+      <Control Name="btn_new" Image="new.gif" Caption="New" Type="Button" Width="" Height="" HTMLAttr="" Function="NewRecord()" Style="" Enabled="" DisplayMode="READ"/>
+      <Control Name="btn_save" Image="" Caption="Save" Type="Button" Width="" Height="" HTMLAttr="" Function="SaveRecord()" Style="" Enabled="" DisplayMode="EDIT|NEW"/>
+      <Control Name="btn_copy" Image="copy.gif" Caption="Copy" Type="button" Style="" Function="CopyRecord()" DisplayMode="READ"/>
+      <Control Name="btn_delete" Image="delete.gif" Caption="Delete" Type="button" Style="" Function="DeleteRecord()" DisplayMode="READ"/>
+      <Control Name="btn_cancel" Image="" Caption="Cancel" Type="Button" Width="" Height="" HTMLAttr="" Function="Cancel()" Style="" Enabled="" DisplayMode="EDIT|NEW|QUERY"/>
+      <Control Name="btn_refresh" Image="refresh.gif" Caption="Default Query" Type="button" Function="RefreshQuery()" Style="" DisplayMode="READ"/>
+      <Control Name="btn_excel" Image="excel.gif" Caption="Excel Export" Type="Button" Width="" Height="" HTMLAttr="" Function="CallService(excelService,renderHTML)" FunctionType="Popup" DisplayMode="READ"/>
+      <Control Name="btn_export" Image="" Caption="Export" Type="Button" HTMLAttr="" Function="CallService(ioService,exportXML)" FunctionType="Page" DisplayMode="READ"/>
+      <Control Name="btn_import" Image="" Caption="Import" Type="Button" HTMLAttr="" Function="ShowPopup(shared.FMImportPopup)" FunctionType="Popup" DisplayMode="READ"/>
+      <Control Name="btn_report" Image="" Caption="Report" Type="Button" HTMLAttr="" Function="CallService(reportService,render)" FunctionType="Popup" DisplayMode="READ"/>
+   </Toolbar> 
+   <Navbar>
+   <Control Name="btn_last" Image="nextlast.gif" Caption="Last" Type="Button" Width="" Height="" HTMLAttr="" Function="GotoPage(-1)" Style="" Enabled="" DisplayMode=""/>
+   <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" Width="" Height="" HTMLAttr="" Function="NextPage()" Style="" Enabled="" DisplayMode=""/>
+   <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" Width="" Height="" HTMLAttr="" Function="PrevPage()" Style="" Enabled="" DisplayMode=""/>
+   <Control Name="btn_first" Image="prevfirst.gif" Caption="First" Type="Button" Width="" Height="" HTMLAttr="" Function="GotoPage(1)" Style="" Enabled="" DisplayMode=""/>
+   </Navbar> 
+   <Resources>
+      <Message Name="msg" Source="mypackage.resource"/>
+      <!--
+      welcome=Welcome on this site.
+      login={0} have be logged in on {1}.
+      imagePath=/images/image_en.gif
+      -->
+      <!-- {@msg:welcome}, {@msg:login(peter,10/20/2005)} -->
+   </Resources>
+   <Layouts>
+      <Layout Name="TableLayout" Type="Table" Controls="attd_id:20, attd_fname:30, attd_lname:30 ..."/>
+      <Layout Name="FormLayout" Type="Grid(2)" Controls="attd_id(1,1), attd_fname(1,2), attd_lname(2,1) ..."/>
+   </Layouts>
+</BizForm>

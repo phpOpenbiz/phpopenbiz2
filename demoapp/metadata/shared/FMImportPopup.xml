@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMImportPopup" Package="shared" Class="BizFormPopup" jsClass="jbForm" Title="Upload File" SearchRule="" Description="" BizDataObj="" Height="180" Width="300">
+   <DisplayModes>
+      <Mode Name="EDIT" TemplateFile="import.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="txt_file" FieldName="" DisplayName="File" Type="File" HTMLAttr="size=20" Width="" Height=""/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_submit" Caption="Submit" Type="HTMLButton" Function="CallService(ioService,importXML)" FunctionType="Form"/>
+      <Control Name="btn_close" Caption="Close" Type="HTMLButton" HTMLAttr="onclick='window.close();'"/>
+      <Control Name="btn_done" Caption="Done" Type="HTMLButton" Function="RefreshParent()"/>
+   </Toolbar> 
+   <Navbar></Navbar> 
+</BizForm>

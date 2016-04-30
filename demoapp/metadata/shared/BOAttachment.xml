@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<BizDataObj Name="BOAttachment" Description="" Package="shared" Class="BizDataObj" DBName="" Table="attach" SearchRule="" SortRule="">
+	<BizFieldList>
+	<BizField Name="Id" Column="SYSID"/>
+	<BizField Name="ParentId" Column="PARENT_ID"/>
+	<BizField Name="Name" Column="NAME"/>
+	<BizField Name="Size" Column="SIZE"/>
+	<BizField Name="Type" Column="TYPE"/>
+	<BizField Name="Location" Column="LOCATION"/>
+	<BizField Name="Data" Column="DATA" Type="Blob"/>
+	<BizField DefaultValue="{@demo.BOAttendeeX:Field[FirstName].Value}" Name="parent_name" Value="{@demo.BOAttendeeX:Field[FirstName].Value} Test"/>
+	</BizFieldList>
+</BizDataObj>

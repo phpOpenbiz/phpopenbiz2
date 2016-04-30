@@ -1,0 +1,7 @@
+<!DOCTYPE note SYSTEM "BizView.dtd">
+<BizView Name="CalDetailView" Description="Calendar event" Package="shared" Class="BizView" Template="view_cal.tpl" AccessControl="">
+   <ControlList>
+      <Control Name="fm_cald" Form="FMCalDetail" SubCtrls="FMCalAttendee"/>
+      <Control Name="fm_calatd" Form="FMCalAttendee"/>
+   </ControlList>
+</BizView>

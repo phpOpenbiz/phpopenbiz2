@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<BizDataObj Name="BOCalAttendee" Description="Calendar Attendee BizDataObj" Package="shared" Class="BizDataObj" InheritFrom="" DBName="" Table="calattds" SearchRule="" SortRule="" OtherSQLRule="" CacheMode="1">
+	<BizFieldList>
+      <BizField Name="Id" Column="SYSID"/>
+      <BizField Name="LName" Column="LNAME" Required="Y"/>
+      <BizField Name="FName" Column="FNAME" Required="Y"/>
+      <BizField Name="Company" Column="COMPANY"/>
+      <BizField Name="Title" Column="JOB_TITLE"/>
+      <BizField Name="Contact" Column="CONTACT"/>
+   </BizFieldList>
+</BizDataObj>

@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<Config>
+   <DataSource>
+      <Database Name="Default" Driver="Pdo_Mysql" Server="localhost" DBName="demo" User="root" Password="root"/>
+      <Database Name="Demo" Driver="PDO_MYSQL" Server="localhost" DBName="demo" User="root" Password="root"/>
+      <Database Name="sugarDB" Driver="PDO_MYSQL" Server="localhost" DBName="sugarcrm" User="admin" Password="admin"/>
+      <Database Name="Default_UX" Driver="mysql" Server="mysql" DBName="bigchef" User="bigchef" Password="sadmin"/>
+      <Database Name="odbc_dev" Driver="odbc" Server="db2srv" DBName="devdb" User="root" Password=""/>
+      <Database Name="mssql_dev" Driver="mssql" Server="server:port" DBName="devdb" User="root" Password=""/>
+   </DataSource>
+</Config>

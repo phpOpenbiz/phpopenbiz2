@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizDataObj Name="BOEvent" Description="Event BizDataObj" Package="demo" Class="BizDataObj" InheritFrom="" DBName="" Table="events" SearchRule="" SortRule="" CacheMode="1" IdGeneration="">
+	<BizFieldList>
+   <BizField Name="Location" Column="LOCATION"/>
+   <BizField Name="Description" Column="DESCRIPTION"/>
+   <BizField Name="End" Column="END" Type="Datetime" Format="%m/%d/%Y %a %b %H:%M:%S"/>
+   <BizField Name="Start" Column="START" Type="Datetime" Format="%Y-%m-%d %H:%M:%S"/>
+   <BizField Name="Host" Column="HOST"/>
+   <BizField Name="Name" Column="NAME" OnAudit="Y" Required="Y"/>
+   <BizField Name="Id" Column="SYSID"/>
+   </BizFieldList>
+   <!-- ObjReference is new in openbiz2 -->
+   <ObjReferences>
+      <Object Name="BORegist" Description="Registrations of event" Relationship="1-M" Table="regist" Column="EVENT_ID" FieldRef="Id" CascadeDelete="Y"/>
+      <Object Name="BOAttendee" Description="Attendees of events" Relationship="M-M" Table="attendee" Column="SYSID" FieldRef="Id" CascadeDelete="Y" XTable="regist" XColumn1="EVENT_ID" XColumn2="ATTENDEE_ID" XDataObj="BORegist"/>
+      <!--<Object Name="BORegist" Description="Registrations of event" Relationship="1-M" Association="regist.EVENT_ID='[Id]'"/>
+      <Object Name="BOAttendee" Description="Attendees of events" Relationship="M-M" Association="regist.EVENT_ID='[Id]' AND attendee.SYSID=regist.ATTENDEE_ID"/>-->
+   </ObjReferences>
+<TableJoins/>
+<Parameters/>
+</BizDataObj>

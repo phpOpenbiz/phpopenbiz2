@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<BizView Name="SignupView" Description="Signup BizView" Package="shared" Class="BizView" Template="view.tpl" AccessControl="">
+   <ControlList>
+   <Control Name="fm_auth" Form="FMAuth" SubCtrls="" Dependency=""/>
+   </ControlList>
+</BizView>

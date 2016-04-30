@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<BizDataObj Name="BORegist" Description="Add description of BizDataObj" Package="demo" Class="BizDataObj" DBName="" Table="regist" SearchRule="" SortRule="" OtherSQLRule="">
+	<BizFieldList>
+      <BizField Name="OnSchedule" Column="ONSCHD_FLAG"/>
+      <BizField Name="Fee" Column="FEE" DefaultValue="15" Type="Number"/>
+      <BizField Name="AttendeeId" Column="ATTENDEE_ID"/>
+      <BizField Name="EvtId" Column="EVENT_ID"/>
+      <BizField Name="Id" Column="SYSID"/>
+      <BizField Name="AttdLName" Join="attendee" Column="LASTNAME"/>
+      <BizField Name="AttdFName" Join="attendee" Column="FIRSTNAME"/>
+      <BizField Name="FullName" Column="" SQLExpr="CONCAT([AttdLName],' ', [AttdFName])"/>
+   </BizFieldList>
+   <TableJoins>
+      <Join Name="attendee" Table="attendee" Column="SYSID" ColumnRef="ATTENDEE_ID" JoinType="INNER JOIN"/>
+      <Join Name="event" Table="events" Column="SYSID" ColumnRef="EVENT_ID" JoinType="INNER JOIN"/>
+   </TableJoins>
+   <ObjReferences>
+      <Object Name="BOEvent" Description="events" Relationship="M-1" Table="events" Column="SYSID" FieldRef="EvtId"/>
+   </ObjReferences>
+</BizDataObj>

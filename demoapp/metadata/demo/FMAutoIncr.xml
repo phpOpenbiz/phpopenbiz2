@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMAutoIncr" Package="demo" Class="BizForm" jsClass="jbForm" Title="AutoIncr ID table test" SearchRule="" Description="" BizDataObj="BOAutoIncr" PageSize="10">
+   <DisplayModes>
+      <Mode Name="QUERY" TemplateFile="edit_c2.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="EDIT" TemplateFile="edit_c2.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="NEW" TemplateFile="edit_c2.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="READ" TemplateFile="list.tpl" InitMode="" DataFormat="block" FormatStyle="tbl"/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="ai_id" FieldName="Id" DisplayName="AutoIncr Id" DisplayMode="READ"/>
+      <BizCtrl Name="ai_fid" FieldName="FId" DisplayName="F Id" DisplayMode="EDIT|NEW"/>
+      <BizCtrl Name="ai_name" FieldName="Name" DisplayName="Name" DrillDownLink="AttendeeView,FMAttendee.attd_id=ai_fid" />
+      <BizCtrl Name="ai_desc" FieldName="Description" DisplayName="Description" Type="Textarea" Width="250" Height="100" />
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_search" Image="search.gif" Caption="Search" Type="Button" Width="" Height="" HTMLAttr="" Function="SearchRecord()" Style="" Enabled="" DisplayMode="READ" Access="READ"/>
+      <Control Name="btn_dosearch" Image="" Caption="Search" Type="button" Width="" Height="" HTMLAttr="" Function="RunSearch()" Style="" Enabled="" DisplayMode="QUERY" Access=""/>
+      <Control Name="btn_edit" Image="edit.gif" Caption="Edit" Type="Button" Width="" Height="" HTMLAttr="" Function="EditRecord()" Style="" Enabled="" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_new" Image="new.gif" Caption="New" Type="Button" Width="" Height="" HTMLAttr="" Function="NewRecord()" Style="" Enabled="" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_save" Image="" Caption="Save" Type="Button" Width="" Height="" HTMLAttr="" Function="SaveRecord()" Style="" Enabled="" DisplayMode="EDIT|NEW" Access="WRITE"/>
+      <Control Name="btn_copy" Image="copy.gif" Caption="Copy" Type="button" Style="" Function="CopyRecord()" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_delete" Image="delete.gif" Caption="Delete" Type="button" Style="" Function="DeleteRecord()" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_cancel" Image="" Caption="Cancel" Type="Button" Width="" Height="" HTMLAttr="" Function="Cancel()" Style="" Enabled="" DisplayMode="EDIT|NEW|QUERY" Access="READ"/>
+      <Control Name="btn_refresh" Image="refresh.gif" Caption="Default Query" Type="Button" Width="" Height="" HTMLAttr="" Function="RefreshQuery()" Style="" Enabled="" DisplayMode="READ" Access="READ"/>
+      <Control Name="btn_excel" Image="excel.gif" Caption="Excel Export" Type="Button" Width="" Height="" HTMLAttr="target=_blank" Function="CallService(excelService,renderCSV)" FunctionType="Popup" Style="" Enabled="" DisplayMode="READ" Access=""/>
+   </Toolbar> 
+   <Navbar>
+   <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" Width="" Height="" HTMLAttr="" Function="NextPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+   <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" Width="" Height="" HTMLAttr="" Function="PrevPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+   </Navbar> 
+</BizForm>

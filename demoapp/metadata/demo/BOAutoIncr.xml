@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizDataObj Name="BOAutoIncr" Description="" Package="demo" Class="BizDataObj" InheritFrom="" DBName="" Table="autoincr" SearchRule="" SortRule="" OtherSQLRule="" CacheMode="1" IdGeneration="Identity">
+	<BizFieldList>
+   	<BizField Name="Id" Column="ID"/>
+   	<BizField Name="FId" Column="F_ID"/>
+   	<BizField Name="Name" Column="NAME"/>
+      <BizField Name="Description" Column="DESCRIPTION"/>
+   </BizFieldList>
+</BizDataObj>

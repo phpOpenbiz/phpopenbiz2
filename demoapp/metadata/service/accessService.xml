@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<PluginService Name="accessService" Package="service" Class="accessService">
+   <access-constraint>
+     <view-collection>
+       <view name="shared.CalendarView">
+         <role name="admin"/>
+         <role name="member"/>
+         <role name=""/>   <!-- allow this view to access by all -->
+       </view>
+       <view name="demo*">    <!-- can use regular expression in the view name -->
+         <role name="admin"/>
+         <role name="member"/>
+         <role name=""/>   <!-- allow this view to access by all -->
+       </view>
+     </view-collection>
+   </access-constraint>
+</PluginService>

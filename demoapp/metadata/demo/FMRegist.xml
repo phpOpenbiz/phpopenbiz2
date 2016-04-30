@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+
+<BizForm Name="FMRegist" Package="demo" Class="BizForm" jsClass="jbForm" Title="Registration" SearchRule="" Description="Add description of BizForm" BizDataObj="BORegist" PageSize="10">
+   <DisplayModes>
+   <Mode Name="QUERY" TemplateFile="edit.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="EDIT" TemplateFile="edit.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="NEW" TemplateFile="edit.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="READ" TemplateFile="list.tpl" InitMode="" DataFormat="block" FormatStyle="tbl"/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="reg_id" FieldName="Id" DisplayName="Registration Id" Enabled="N"/>
+      <BizCtrl Name="reg_evtid" FieldName="EvtId" DisplayName="Event Id" ValuePicker="EventPopup" Enabled="N"/>
+      <BizCtrl Name="reg_attdid" FieldName="AttendeeId" DisplayName="Attendee Id" Enabled="N"/>
+      <BizCtrl Name="reg_attdfn" FieldName="AttdFName" DisplayName="First Name" Enabled="Y"/>
+      <BizCtrl Name="reg_attdln" FieldName="AttdLName" DisplayName="Last Name" Enabled="Y" ValuePicker="FMAttendeePopup" DrillDownLink="AttendeeView,FMAttendee.attd_id=reg_attdid">
+         <EventHandler Name="onchange" Event="onchange" Function="AutoPickValue(reg_attdln)" FunctionType="" />
+      </BizCtrl>
+      <BizCtrl Name="reg_attdnm" FieldName="FullName" DisplayName="Full Name" Enabled="N"/>
+      <BizCtrl Name="reg_fee" FieldName="Fee" DisplayName="Fee" SelectFrom="Selection(Fee)"/>
+      <BizCtrl Name="reg_onschd" FieldName="OnSchedule" DisplayName="On Schedule" Type="Checkbox" SelectFrom="Y"/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_search" Image="search.gif" Caption="Search" Type="Button" Width="" Height="" HTMLAttr="" Function="SearchRecord()" Style="" Enabled="" DisplayMode="READ" Access="READ"/>
+      <Control Name="btn_dosearch" Image="" Caption="Search" Type="button" Width="" Height="" HTMLAttr="" Function="RunSearch()" Style="" Enabled="" DisplayMode="QUERY" Access=""/>
+      <Control Name="btn_edit" Image="edit.gif" Caption="Edit" Type="Button" Width="" Height="" HTMLAttr="" Function="EditRecord()" Style="" Enabled="" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_new" Image="new.gif" Caption="New" Type="Button" Width="" Height="" HTMLAttr="" Function="NewRecord()" Style="" Enabled="" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_save" Image="" Caption="Save" Type="Button" Width="" Height="" HTMLAttr="" Function="SaveRecord()" Style="" Enabled="" DisplayMode="EDIT|NEW" Access="WRITE"/>
+      <Control Name="btn_copy" Image="copy.gif" Caption="Copy" Type="button" Style="" Function="CopyRecord()" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_delete" Image="delete.gif" Caption="Delete" Type="button" Style="" Function="DeleteRecord()" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_cancel" Image="" Caption="Cancel" Type="Button" Width="" Height="" HTMLAttr="" Function="Cancel()" Style="" Enabled="" DisplayMode="EDIT|NEW|QUERY" Access="WRITE"/>
+      <Control Name="btn_refresh" Image="refresh.gif" Caption="Default Query" Type="button" Function="RefreshQuery()" Style="" DisplayMode="READ" Access=""/>
+      <Control Name="btn_excel" Image="excel.gif" Caption="Excel Export" Type="Button" Width="" Height="" Function="CallService(excelService,renderCSV)" FunctionType="Popup" Style="" Enabled="" DisplayMode="READ" Access=""/>
+   </Toolbar> 
+   <Navbar>
+   <Control Name="btn_last" Image="nextlast.gif" Caption="Last" Type="Button" Width="" Height="" HTMLAttr="" Function="GotoPage(-1)" Style="" Enabled="" DisplayMode="" Access=""/>
+   <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" Width="" Height="" HTMLAttr="" Function="NextPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+   <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" Width="" Height="" HTMLAttr="" Function="PrevPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+   <Control Name="btn_first" Image="prevfirst.gif" Caption="First" Type="Button" Width="" Height="" HTMLAttr="" Function="GotoPage(1)" Style="" Enabled="" DisplayMode="" Access=""/>   </Navbar> 
+</BizForm>

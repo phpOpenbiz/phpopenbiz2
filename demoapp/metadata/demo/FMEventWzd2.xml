@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMEventWzd2" Package="demo" Class="BizFormWizard" jsClass="jbForm" Title="Event time:" SearchRule="" Description="Event BizForm" BizDataObj="BOEvent">
+   <DisplayModes>
+      <Mode Name="EDIT" TemplateFile="edit.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="evt_start" FieldName="Start" DisplayName="Start" Type="Datetime" />
+      <BizCtrl Name="evt_end" FieldName="End" DisplayName="End" Type="Datetime" />
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_back" Image="" Caption="&lt; Back" Type="Button" Function="GoPrev()" />
+      <Control Name="btn_next" Image="" Caption="Next &gt;" Type="Button" Function="GoNext()" />
+      <Control Name="btn_cancel" Image="" Caption="Cancel" Type="Button" Function="DoCancel()" PostAction="view:demo.EventView"/>
+      <Control Name="btn_finish" Image="" Caption="Finish" Type="Button" Function="DoFinish()" PostAction="view:demo.EventView"/>
+   </Toolbar> 
+   <Navbar>
+   </Navbar> 
+</BizForm>

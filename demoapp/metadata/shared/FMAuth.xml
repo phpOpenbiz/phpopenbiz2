@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMAuth" Package="shared" Class="FMAuth" jsClass="jbForm" Title="Event Managment System" SearchRule="" Description="" BizDataObj="" PageSize="3">
+   <DisplayModes>
+      <Mode Name="EDIT" TemplateFile="signup.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+   </DisplayModes>
+   <BizCtrlList>
+   <BizCtrl Name="userid" FieldName="" DisplayName="User Id" Type="Text" Width="150" Height="" HTMLAttr="" Function="" Hidden="" Enabled="" Order="" Style="" SelectBizForm="" SelectFrom="" DisplayMode=""/>
+   <BizCtrl Name="password" FieldName="" DisplayName="Password" Type="Password" Width="150" Height="" HTMLAttr="" Function="" Hidden="" Enabled="" Order="" Style="" SelectBizForm="" SelectFrom="" DisplayMode=""/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="txt_err" Image="" Caption="" Type="HTMLBlock" Style="font-size: 12px;color:red;font-weight:bold;"/>
+      <Control Name="btn_submit" Image="" Caption="Submit" Type="HTMLButton" Function="Login()" PostAction="url:login.php?login=success"/>
+   </Toolbar> 
+   <Navbar></Navbar> 
+</BizForm>

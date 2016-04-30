@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<BizDataObj Name="BOCalendar" Description="Calendar BizDataObj" Package="shared" Class="BizDataObj" InheritFrom="" DBName="" Table="calevts" SearchRule="" SortRule="" OtherSQLRule="" CacheMode="0">
+	<BizFieldList>
+      <BizField Name="Id" Column="SYSID"/>
+      <BizField Name="Subject" Column="SUBJECT" Required="Y"/>
+      <BizField Name="Type" Column="TYPE"/>
+      <BizField Name="Location" Column="LOCATION"/>
+      <BizField Name="Notes" Column="NOTES"/>
+      <BizField Name="Start" Column="STARTTIME" Type="Datetime" Format="%Y-%m-%d %H:%M:%S"/>
+      <BizField Name="End" Column="ENDTIME" Type="Datetime" Format="%Y-%m-%d %H:%M:%S"/>
+      <BizField Name="Repeated" Column="REPEATFLAG"/>
+      <BizField Name="RepeatCycle" Column="REPEATCYCLE"/>
+      <BizField Name="RepeatEnd" Column="REPEATEND" Type="Datetime" Format="%Y-%m-%d %H:%M:%S"/>
+   </BizFieldList>
+
+</BizDataObj>

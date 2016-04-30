@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMFieldDepTest" Package="demo" Class="BizForm" jsClass="myjbForm" Title="Test field dependency" BizDataObj=""> 
+   <DisplayModes>
+      <Mode Name="EDIT" TemplateFile="edit_test.tpl" InitMode="" DataFormat="array"/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="combo1" FieldName="" DisplayName="event test combobox" Hidden="" Enabled="" SelectFrom="Selection(TestEvent)">
+         <EventHandler Name="onchange" Event="onchange" Function="UpdateForm()" FunctionType="" />
+         <EventHandler Name="onmouseover" Event="onmouseover" Function="js_onMouseOverCombo1()" FunctionType="" />
+      </BizCtrl>
+      <BizCtrl Name="edit1" FieldName="" DisplayName="enable/disable switch" Hidden="" Enabled="{(@:Control[combo1].Value == 'EnblCtrl')?'Y':'N'}">
+      </BizCtrl>
+      <BizCtrl Name="edit2" FieldName="" DisplayName="hide/show switch" Hidden="{(@:Control[combo1].Value == 'HideCtrl')?'Y':'N'}" Enabled="">
+         <EventHandler Name="onchange" Event="onchange" Function="js:alert('onchange')" FunctionType="" PostAction=""/>
+      </BizCtrl>
+      <BizCtrl Name="combo2" FieldName="" DisplayName="cascade combobox" SelectFrom="demo.Selection({@:Control[combo1].Value}_opt)">
+      </BizCtrl>
+      <BizCtrl Name="edit3" FieldName="" DisplayName="change value with js function">
+      </BizCtrl>
+      <BizCtrl Name="attd_fname" FieldName="FirstName" DisplayName="Auto Suggestion Field - Attendee First Name" Type="AutoSuggest" SelectFrom="demo.BOAttendee[FirstName], [FirstName] like '{@:Control[attd_fname].Value}%'"/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_submit" Image="" Caption="Submit" Type="Button" />
+   </Toolbar> 
+   <Navbar>
+   </Navbar> 
+</BizForm>

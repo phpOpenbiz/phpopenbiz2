@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="no"?>
+<BizView Name="RegistView" Description="Events Registration" Package="demo" Class="BizView" Template="view.tpl" AccessControl="">
+   <ControlList>
+   <Control Name="_tabs" Form="Tabs"/>
+   <Control Name="fm_reigst" Form="FMRegist" SubCtrls="FMEventChild" Dependency=""/>
+   <Control Name="fm_event" Form="FMEventChild" SubCtrls="" Dependency=""/>
+   </ControlList>
+</BizView>

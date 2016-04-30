@@ -1,0 +1,922 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+# demoapp/metadata/demo/AttendeePopup.xml
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/demo/FMReport.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "Attendee Id"
+msgstr "Attendee Id"
+
+# demoapp/metadata/demo/AttendeePopup.xml
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "First Name"
+msgstr "First Name"
+
+# demoapp/metadata/demo/AttendeePopup.xml
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "Last Name"
+msgstr "Last Name"
+
+# demoapp/metadata/demo/AttendeePopup.xml
+# demoapp/metadata/demo/EventPopup.xml
+msgid "Select"
+msgstr "Select"
+
+# demoapp/metadata/demo/AttendeePopup.xml
+# demoapp/metadata/demo/EventPopup.xml
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAttendeeChild.xml
+# demoapp/metadata/demo/FMAttendeeChild.xml
+# demoapp/metadata/demo/FMAttendeePopup.xml
+# demoapp/metadata/demo/FMAttendeePopup.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/demo/FMRegistChild.xml
+# demoapp/metadata/demo/FMRegistChild.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Search"
+msgstr "Search"
+
+# demoapp/metadata/demo/AttendeePopup.xml
+# demoapp/metadata/demo/EventPopup.xml
+msgid "Go"
+msgstr "Go"
+
+# demoapp/metadata/demo/AttendeePopup.xml
+# demoapp/metadata/demo/EventPopup.xml
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAttendeeChild.xml
+# demoapp/metadata/demo/FMAttendeePopup.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMEventWzd1.xml
+# demoapp/metadata/demo/FMEventWzd2.xml
+# demoapp/metadata/demo/FMNewEventWzd1.xml
+# demoapp/metadata/demo/FMNewEventWzd2.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/demo/FMRegistChild.xml
+# demoapp/metadata/main/FO/FMNewVendor.xml
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Cancel"
+msgstr "Cancel"
+
+# demoapp/metadata/demo/AttendeePopup.xml
+# demoapp/metadata/demo/EventPopup.xml
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+# demoapp/metadata/shared/FMCalendar.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Next"
+msgstr "Next"
+
+# demoapp/metadata/demo/AttendeePopup.xml
+# demoapp/metadata/demo/EventPopup.xml
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+# demoapp/metadata/shared/FMCalendar.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Previous"
+msgstr "Previous"
+
+# demoapp/metadata/demo/EventPopup.xml
+msgid "Select an event"
+msgstr "Select an event"
+
+# demoapp/metadata/demo/EventPopup.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventWzd1.xml
+# demoapp/metadata/demo/FMNewEventWzd1.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/demo/FMReport.xml
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Event Id"
+msgstr "Event Id"
+
+# demoapp/metadata/demo/EventPopup.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMEventWzd1.xml
+# demoapp/metadata/demo/FMNewEventWzd1.xml
+# demoapp/metadata/main/FO/FMNewVendor.xml
+msgid "Name"
+msgstr "Name"
+
+# demoapp/metadata/demo/EventPopup.xml
+# demoapp/metadata/demo/FMAttendeePopup.xml
+msgid "Join"
+msgstr "Join"
+
+# demoapp/metadata/demo/EventPopup.xml
+# demoapp/metadata/demo/FMAttendeePopup.xml
+# demoapp/metadata/shared/FMImportPopup.xml
+msgid "Close"
+msgstr "Close"
+
+# demoapp/metadata/demo/EventTabs.xml
+# demoapp/metadata/demo/Tabs.xml
+# demoapp/metadata/test/FM_Attendees.xml
+msgid "Attendees"
+msgstr "Attendees"
+
+# demoapp/metadata/demo/EventTabs.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/demo/FMRegistChild.xml
+# demoapp/metadata/demo/Tabs.xml
+msgid "Registration"
+msgstr "Registration"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAttendeeChild.xml
+# demoapp/metadata/demo/FMAttendeePopup.xml
+msgid "Attendee"
+msgstr "Attendee"
+
+# demoapp/metadata/demo/FMAttendee.xml
+msgid "Other Name"
+msgstr "Other Name"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMRegist.xml
+msgid "Full Name"
+msgstr "Full Name"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMReport.xml
+msgid "Phone"
+msgstr "Phone"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMReport.xml
+msgid "Email"
+msgstr "Email"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMReport.xml
+msgid "Address"
+msgstr "Address"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/main/FO/FMNewVendor.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Type"
+msgstr "Type"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventWzd1.xml
+# demoapp/metadata/demo/FMNewEventWzd1.xml
+msgid "Description"
+msgstr "Description"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Edit"
+msgstr "Edit"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "New"
+msgstr "New"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Save"
+msgstr "Save"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Copy"
+msgstr "Copy"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Delete"
+msgstr "Delete"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Default Query"
+msgstr "Default Query"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMAutoIncr.xml
+# demoapp/metadata/demo/FMCompKey.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMRegist.xml
+msgid "Excel Export"
+msgstr "Excel Export"
+
+# demoapp/metadata/demo/FMAttendee.xml
+msgid "Export"
+msgstr "Export"
+
+# demoapp/metadata/demo/FMAttendee.xml
+msgid "Import"
+msgstr "Import"
+
+# demoapp/metadata/demo/FMAttendee.xml
+msgid "Report"
+msgstr "Report"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Last"
+msgstr "Last"
+
+# demoapp/metadata/demo/FMAttendee.xml
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "First"
+msgstr "First"
+
+# demoapp/metadata/demo/FMAttendeeChild.xml
+# demoapp/metadata/demo/FMAttendeePopup.xml
+# demoapp/metadata/demo/FMRegistChild.xml
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "Add"
+msgstr "Add"
+
+# demoapp/metadata/demo/FMAttendeeChild.xml
+# demoapp/metadata/demo/FMRegistChild.xml
+msgid "Remove"
+msgstr "Remove"
+
+# demoapp/metadata/demo/FMAutoIncr.xml
+msgid "AutoIncr ID table test"
+msgstr "AutoIncr ID table test"
+
+# demoapp/metadata/demo/FMAutoIncr.xml
+msgid "AutoIncr Id"
+msgstr "AutoIncr Id"
+
+# demoapp/metadata/demo/FMAutoIncr.xml
+msgid "F Id"
+msgstr "F Id"
+
+# demoapp/metadata/demo/FMCompKey.xml
+msgid "Composite key test"
+msgstr "Composite key test"
+
+# demoapp/metadata/demo/FMCompKey.xml
+msgid "Age"
+msgstr "Age"
+
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventChild.xml
+msgid "Sports Events"
+msgstr "Sports Events"
+
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventWzd2.xml
+# demoapp/metadata/demo/FMNewEventWzd2.xml
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "End"
+msgstr "End"
+
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventWzd2.xml
+# demoapp/metadata/demo/FMNewEventWzd2.xml
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Start"
+msgstr "Start"
+
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Location"
+msgstr "Location"
+
+# demoapp/metadata/demo/FMEvent.xml
+# demoapp/metadata/demo/FMEventWzd1.xml
+# demoapp/metadata/demo/FMNewEventWzd1.xml
+msgid "Host"
+msgstr "Host"
+
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/demo/Tabs.xml
+msgid "Events"
+msgstr "Events"
+
+# demoapp/metadata/demo/FMEventTree.xml
+# demoapp/metadata/main/FO/FMNewVendor.xml
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "Id"
+msgstr "Id"
+
+# demoapp/metadata/demo/FMEventTree.xml
+msgid "PId"
+msgstr "PId"
+
+# demoapp/metadata/demo/FMEventWzd1.xml
+msgid "Event information:"
+msgstr "Event information:"
+
+# demoapp/metadata/demo/FMEventWzd1.xml
+# demoapp/metadata/demo/FMEventWzd2.xml
+# demoapp/metadata/demo/FMNewEventWzd1.xml
+# demoapp/metadata/demo/FMNewEventWzd2.xml
+# demoapp/metadata/main/FO/FMNewVendor.xml
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "< Back"
+msgstr "< Back"
+
+# demoapp/metadata/demo/FMEventWzd1.xml
+# demoapp/metadata/demo/FMEventWzd2.xml
+# demoapp/metadata/demo/FMNewEventWzd1.xml
+# demoapp/metadata/demo/FMNewEventWzd2.xml
+# demoapp/metadata/main/FO/FMNewVendor.xml
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "Next >"
+msgstr "Next >"
+
+# demoapp/metadata/demo/FMEventWzd1.xml
+# demoapp/metadata/demo/FMEventWzd2.xml
+# demoapp/metadata/demo/FMNewEventWzd1.xml
+# demoapp/metadata/demo/FMNewEventWzd2.xml
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "Finish"
+msgstr "Finish"
+
+# demoapp/metadata/demo/FMEventWzd2.xml
+msgid "Event time:"
+msgstr "Event time:"
+
+# demoapp/metadata/demo/FMFieldDepTest.xml
+msgid "Test field dependency"
+msgstr "Test field dependency"
+
+# demoapp/metadata/demo/FMFieldDepTest.xml
+msgid "event test combobox"
+msgstr "event test combobox"
+
+# demoapp/metadata/demo/FMFieldDepTest.xml
+msgid "enable/disable switch"
+msgstr "enable/disable switch"
+
+# demoapp/metadata/demo/FMFieldDepTest.xml
+msgid "hide/show switch"
+msgstr "hide/show switch"
+
+# demoapp/metadata/demo/FMFieldDepTest.xml
+msgid "cascade combobox"
+msgstr "cascade combobox"
+
+# demoapp/metadata/demo/FMFieldDepTest.xml
+msgid "change value with js function"
+msgstr "change value with js function"
+
+# demoapp/metadata/demo/FMNewEventWzd1.xml
+msgid "Enter event information:"
+msgstr "Enter event information:"
+
+# demoapp/metadata/demo/FMNewEventWzd2.xml
+msgid "Enter event time:"
+msgstr "Enter event time:"
+
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/demo/FMReport.xml
+msgid "Registration Id"
+msgstr "Registration Id"
+
+# demoapp/metadata/demo/FMRegist.xml
+# demoapp/metadata/demo/FMReport.xml
+msgid "Fee"
+msgstr "Fee"
+
+# demoapp/metadata/demo/FMRegist.xml
+msgid "On Schedule"
+msgstr "On Schedule"
+
+# demoapp/metadata/demo/FMReport.xml
+msgid "Events Summary"
+msgstr "Events Summary"
+
+# demoapp/metadata/demo/FMReport.xml
+msgid "Event Name"
+msgstr "Event Name"
+
+# demoapp/metadata/demo/FMReport.xml
+msgid "Attendee Name"
+msgstr "Attendee Name"
+
+# demoapp/metadata/demo/FMRichText.xml
+msgid "Test rich text editor"
+msgstr "Test rich text editor"
+
+# demoapp/metadata/demo/FMRichText.xml
+msgid "rich text editor"
+msgstr "rich text editor"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata/demo/Menus.xml
+msgid "Yahoo"
+msgstr "Yahoo"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata/demo/Menus.xml
+msgid "Yahoo email"
+msgstr "Yahoo email"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata/demo/Menus.xml
+msgid "Yahoo finance ..."
+msgstr "Yahoo finance ..."
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata/demo/Menus.xml
+msgid "Today's market"
+msgstr "Today's market"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata/demo/Menus.xml
+msgid "News"
+msgstr "News"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata/demo/Menus.xml
+msgid "Wizard tests"
+msgstr "Wizard tests"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata/demo/Menus.xml
+msgid "Create an event"
+msgstr "Create an event"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata/demo/Menus.xml
+msgid "Edit an event (Id=EVT_2)"
+msgstr "Edit an event (Id=EVT_2)"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "0"
+msgstr "0"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "15"
+msgstr "15"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "20"
+msgstr "20"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "25"
+msgstr "25"
+
+# demoapp/metadata/demo/Selection.xml
+# demoapp/metadata/demo/Selection.xml
+msgid "Y"
+msgstr "Y"
+
+# demoapp/metadata/demo/Selection.xml
+# demoapp/metadata/demo/Selection.xml
+msgid "N"
+msgstr "N"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Individual"
+msgstr "Individual"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Team"
+msgstr "Team"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "BarLine Chart"
+msgstr "BarLine Chart"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Pie Chart"
+msgstr "Pie Chart"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "GroupBar Chart"
+msgstr "GroupBar Chart"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "[Select]"
+msgstr "[Select]"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Disable Controls"
+msgstr "Disable Controls"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Enable Controls"
+msgstr "Enable Controls"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Hide Controls"
+msgstr "Hide Controls"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Disable Controls - 1"
+msgstr "Disable Controls - 1"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Disable Controls - 2"
+msgstr "Disable Controls - 2"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Disable Controls - 3"
+msgstr "Disable Controls - 3"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Enable Controls - 1"
+msgstr "Enable Controls - 1"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Enable Controls - 2"
+msgstr "Enable Controls - 2"
+
+# demoapp/metadata/demo/Selection.xml
+msgid "Enable Controls - 3"
+msgstr "Enable Controls - 3"
+
+# demoapp/metadata/demo/Tabs.xml
+msgid "Home"
+msgstr "Home"
+
+# demoapp/metadata/demo/Tabs.xml
+msgid "Reports"
+msgstr "Reports"
+
+# demoapp/metadata/demo/Tabs.xml
+msgid "Test 2.1 Features"
+msgstr "Test 2.1 Features"
+
+# demoapp/metadata/main/FO/FMNewVendor.xml
+msgid "Vendor's Information"
+msgstr "Vendor's Information"
+
+# demoapp/metadata/main/FO/FMNewVendor.xml
+msgid "Second Name"
+msgstr "Second Name"
+
+# demoapp/metadata/main/FO/FMNewVendor.xml
+msgid "Category"
+msgstr "Category"
+
+# demoapp/metadata/main/FO/FMNewVendor.xml
+msgid "Sub Type"
+msgstr "Sub Type"
+
+# demoapp/metadata/main/FO/FMNewVendor.xml
+msgid "Parent Vendor"
+msgstr "Parent Vendor"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "Comments"
+msgstr "Comments"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "vendor_id"
+msgstr "vendor_id"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "account_type"
+msgstr "account_type"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "Status"
+msgstr "Status"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "Rating"
+msgstr "Rating"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "category"
+msgstr "category"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "status_change_date"
+msgstr "status_change_date"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "status_change_reason"
+msgstr "status_change_reason"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "division_id"
+msgstr "division_id"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "createby"
+msgstr "createby"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "createdt"
+msgstr "createdt"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "updateby"
+msgstr "updateby"
+
+# demoapp/metadata/main/FO/FMNewVendorAccount.xml
+msgid "updatedt"
+msgstr "updatedt"
+
+# demoapp/metadata/shared/FMAttachment.xml
+msgid "Attachment"
+msgstr "Attachment"
+
+# demoapp/metadata/shared/FMAttachment.xml
+msgid "File Id"
+msgstr "File Id"
+
+# demoapp/metadata/shared/FMAttachment.xml
+msgid "Parent Id"
+msgstr "Parent Id"
+
+# demoapp/metadata/shared/FMAttachment.xml
+msgid "File Name"
+msgstr "File Name"
+
+# demoapp/metadata/shared/FMAttachment.xml
+msgid "File Size"
+msgstr "File Size"
+
+# demoapp/metadata/shared/FMAttachment.xml
+# demoapp/metadata/shared/FMImportPopup.xml
+msgid "File"
+msgstr "File"
+
+# demoapp/metadata/shared/FMAttachment.xml
+msgid "Parent Name"
+msgstr "Parent Name"
+
+# demoapp/metadata/shared/FMAuth.xml
+msgid "Event Managment System"
+msgstr "Event Managment System"
+
+# demoapp/metadata/shared/FMAuth.xml
+msgid "User Id"
+msgstr "User Id"
+
+# demoapp/metadata/shared/FMAuth.xml
+msgid "Password"
+msgstr "Password"
+
+# demoapp/metadata/shared/FMAuth.xml
+# demoapp/metadata/shared/FMImportPopup.xml
+msgid "Submit"
+msgstr "Submit"
+
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "Event Attendees"
+msgstr "Event Attendees"
+
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "Company"
+msgstr "Company"
+
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "Title"
+msgstr "Title"
+
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "Contact Info"
+msgstr "Contact Info"
+
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "Show Schedule"
+msgstr "Show Schedule"
+
+# demoapp/metadata/shared/FMCalAttendee.xml
+msgid "Show Attendee List"
+msgstr "Show Attendee List"
+
+# demoapp/metadata/shared/FMCalDetail.xml
+msgid "Calendar Event"
+msgstr "Calendar Event"
+
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Subject"
+msgstr "Subject"
+
+# demoapp/metadata/shared/FMCalDetail.xml
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Notes"
+msgstr "Notes"
+
+# demoapp/metadata/shared/FMCalDetail.xml
+msgid "Repeated"
+msgstr "Repeated"
+
+# demoapp/metadata/shared/FMCalDetail.xml
+msgid "Repeat Cycle"
+msgstr "Repeat Cycle"
+
+# demoapp/metadata/shared/FMCalDetail.xml
+msgid "Repeat End"
+msgstr "Repeat End"
+
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Calendar"
+msgstr "Calendar"
+
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "New Event"
+msgstr "New Event"
+
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Today"
+msgstr "Today"
+
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Day"
+msgstr "Day"
+
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Week"
+msgstr "Week"
+
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "Month"
+msgstr "Month"
+
+# demoapp/metadata/shared/FMCalendar.xml
+msgid "All Events"
+msgstr "All Events"
+
+# demoapp/metadata/shared/FMImportPopup.xml
+msgid "Upload File"
+msgstr "Upload File"
+
+# demoapp/metadata/shared/FMImportPopup.xml
+msgid "Done"
+msgstr "Done"
+
+# demoapp/metadata/shared/Selection.xml
+msgid "Meeting"
+msgstr "Meeting"
+
+# demoapp/metadata/shared/Selection.xml
+msgid "Appointment"
+msgstr "Appointment"
+
+# demoapp/metadata/shared/Selection.xml
+msgid "Birthday"
+msgstr "Birthday"
+
+# demoapp/metadata/shared/Selection.xml
+msgid "Every day"
+msgstr "Every day"
+
+# demoapp/metadata/shared/Selection.xml
+msgid "Every week"
+msgstr "Every week"
+
+# demoapp/metadata/shared/Selection.xml
+msgid "Every month"
+msgstr "Every month"
+
+# demoapp/metadata/shared/Selection.xml
+msgid "Every year"
+msgstr "Every year"
+
+# demoapp/metadata/test/FM_Attendees.xml
+msgid "lastname"
+msgstr "lastname"
+
+# demoapp/metadata/test/FM_Attendees.xml
+msgid "firstname"
+msgstr "firstname"
+
+# demoapp/metadata/test/FM_Attendees.xml
+msgid "othername"
+msgstr "othername"
+
+# demoapp/metadata/test/FM_Attendees.xml
+msgid "phone"
+msgstr "phone"
+
+# demoapp/metadata/test/FM_Attendees.xml
+msgid "email"
+msgstr "email"
+
+# demoapp/metadata/test/FM_Attendees.xml
+msgid "address"
+msgstr "address"
+
+# demoapp/metadata/test/FM_Attendees.xml
+# demoapp/metadata/test/FM_Test.xml
+msgid "description"
+msgstr "description"
+
+# demoapp/metadata/test/FM_Test.xml
+msgid "Form Title"
+msgstr "Form Title"
+
+# demoapp/metadata/test/FM_Test.xml
+msgid "name"
+msgstr "name"
+
+# demoapp/metadata/test/FM_Test.xml
+msgid "f_id"
+msgstr "f_id"
+
+# demoapp/templates/view.tpl
+msgid "Powered by Openbiz"
+msgstr "Powered by Openbiz"
+
