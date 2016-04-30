@@ -1,0 +1,918 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+# \demo\AttendeePopup.xml
+# \demo\FMAttendee.xml
+# \demo\FMRegist.xml
+# \demo\FMReport.xml
+# \shared\FMCalAttendee.xml
+msgid "Attendee Id"
+msgstr "Attendee Id"
+
+# \demo\AttendeePopup.xml
+# \demo\FMAttendee.xml
+# \demo\FMCompKey.xml
+# \demo\FMRegist.xml
+# \shared\FMCalAttendee.xml
+msgid "First Name"
+msgstr "Nombre"
+
+# \demo\AttendeePopup.xml
+# \demo\FMAttendee.xml
+# \demo\FMCompKey.xml
+# \demo\FMRegist.xml
+# \shared\FMCalAttendee.xml
+msgid "Last Name"
+msgstr "Apellido"
+
+# \demo\AttendeePopup.xml
+# \demo\EventPopup.xml
+msgid "Select"
+msgstr "Select"
+
+# \demo\AttendeePopup.xml
+# \demo\EventPopup.xml
+# \demo\FMAttendee.xml
+# \demo\FMAttendee.xml
+# \demo\FMAttendeeChild.xml
+# \demo\FMAttendeeChild.xml
+# \demo\FMAttendeePopup.xml
+# \demo\FMAttendeePopup.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \demo\FMRegist.xml
+# \demo\FMRegistChild.xml
+# \demo\FMRegistChild.xml
+# \shared\FMAttachment.xml
+# \shared\FMAttachment.xml
+# \shared\FMCalAttendee.xml
+# \shared\FMCalAttendee.xml
+# \test\FM_Attendees.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+# \test\FM_Test.xml
+msgid "Search"
+msgstr "Buscar"
+
+# \demo\AttendeePopup.xml
+# \demo\EventPopup.xml
+msgid "Go"
+msgstr "Go"
+
+# \demo\AttendeePopup.xml
+# \demo\EventPopup.xml
+# \demo\FMAttendee.xml
+# \demo\FMAttendeeChild.xml
+# \demo\FMAttendeePopup.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMEventWzd1.xml
+# \demo\FMEventWzd2.xml
+# \demo\FMNewEventWzd1.xml
+# \demo\FMNewEventWzd2.xml
+# \demo\FMRegist.xml
+# \demo\FMRegistChild.xml
+# \main\FO\FMNewVendor.xml
+# \main\FO\FMNewVendorAccount.xml
+# \shared\FMAttachment.xml
+# \shared\FMCalAttendee.xml
+# \shared\FMCalDetail.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Cancel"
+msgstr "Anular"
+
+# \demo\AttendeePopup.xml
+# \demo\EventPopup.xml
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \shared\FMAttachment.xml
+# \shared\FMCalAttendee.xml
+# \shared\FMCalendar.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Next"
+msgstr "Próximo"
+
+# \demo\AttendeePopup.xml
+# \demo\EventPopup.xml
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \shared\FMAttachment.xml
+# \shared\FMCalAttendee.xml
+# \shared\FMCalendar.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Previous"
+msgstr "Anterior"
+
+# \demo\EventPopup.xml
+msgid "Select an event"
+msgstr "Select an event"
+
+# \demo\EventPopup.xml
+# \demo\FMEvent.xml
+# \demo\FMEventWzd1.xml
+# \demo\FMNewEventWzd1.xml
+# \demo\FMRegist.xml
+# \demo\FMReport.xml
+# \shared\FMCalDetail.xml
+# \shared\FMCalendar.xml
+msgid "Event Id"
+msgstr "Id Visita "
+
+# \demo\EventPopup.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMEventWzd1.xml
+# \demo\FMNewEventWzd1.xml
+# \main\FO\FMNewVendor.xml
+msgid "Name"
+msgstr "Nombre"
+
+# \demo\EventPopup.xml
+# \demo\FMAttendeePopup.xml
+msgid "Join"
+msgstr "Juntar"
+
+# \demo\EventPopup.xml
+# \demo\FMAttendeePopup.xml
+# \shared\FMImportPopup.xml
+msgid "Close"
+msgstr "Cerrar"
+
+# \demo\EventTabs.xml
+# \demo\Tabs.xml
+# \test\FM_Attendees.xml
+msgid "Attendees"
+msgstr "Participants"
+
+# \demo\EventTabs.xml
+# \demo\FMRegist.xml
+# \demo\FMRegistChild.xml
+# \demo\Tabs.xml
+msgid "Registration"
+msgstr "Inscription"
+
+# \demo\FMAttendee.xml
+# \demo\FMAttendeeChild.xml
+# \demo\FMAttendeePopup.xml
+msgid "Attendee"
+msgstr "Attendee"
+
+# \demo\FMAttendee.xml
+msgid "Other Name"
+msgstr "Other Name"
+
+# \demo\FMAttendee.xml
+# \demo\FMRegist.xml
+msgid "Full Name"
+msgstr "Nombre completo"
+
+# \demo\FMAttendee.xml
+# \demo\FMReport.xml
+msgid "Phone"
+msgstr "Phone"
+
+# \demo\FMAttendee.xml
+# \demo\FMReport.xml
+msgid "Email"
+msgstr "Email"
+
+# \demo\FMAttendee.xml
+# \demo\FMReport.xml
+msgid "Address"
+msgstr "Address"
+
+# \demo\FMAttendee.xml
+# \main\FO\FMNewVendor.xml
+# \shared\FMAttachment.xml
+# \shared\FMCalDetail.xml
+# \shared\FMCalendar.xml
+msgid "Type"
+msgstr "Type"
+
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMEvent.xml
+# \demo\FMEventWzd1.xml
+# \demo\FMNewEventWzd1.xml
+msgid "Description"
+msgstr "Description"
+
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \shared\FMAttachment.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Edit"
+msgstr "Editar"
+
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \shared\FMAttachment.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "New"
+msgstr "Nuevo"
+
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \shared\FMAttachment.xml
+# \shared\FMCalDetail.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Save"
+msgstr "Grabar"
+
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Copy"
+msgstr "Copiar"
+
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \shared\FMAttachment.xml
+# \shared\FMCalAttendee.xml
+# \shared\FMCalDetail.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Delete"
+msgstr "Borrar"
+
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Default Query"
+msgstr "Default Query"
+
+# \demo\FMAttendee.xml
+# \demo\FMAutoIncr.xml
+# \demo\FMCompKey.xml
+# \demo\FMEvent.xml
+# \demo\FMRegist.xml
+msgid "Excel Export"
+msgstr "Exportación Excel"
+
+# \demo\FMAttendee.xml
+msgid "Export"
+msgstr "Export"
+
+# \demo\FMAttendee.xml
+msgid "Import"
+msgstr "Import"
+
+# \demo\FMAttendee.xml
+msgid "Report"
+msgstr "Report"
+
+# \demo\FMAttendee.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Last"
+msgstr "Ultimo"
+
+# \demo\FMAttendee.xml
+# \demo\FMEvent.xml
+# \demo\FMEventTree.xml
+# \demo\FMRegist.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "First"
+msgstr "Primer"
+
+# \demo\FMAttendeeChild.xml
+# \demo\FMAttendeePopup.xml
+# \demo\FMRegistChild.xml
+# \shared\FMCalAttendee.xml
+msgid "Add"
+msgstr "Agregar"
+
+# \demo\FMAttendeeChild.xml
+# \demo\FMRegistChild.xml
+msgid "Remove"
+msgstr "Quitar"
+
+# \demo\FMAutoIncr.xml
+msgid "AutoIncr ID table test"
+msgstr "AutoIncr ID table test"
+
+# \demo\FMAutoIncr.xml
+msgid "AutoIncr Id"
+msgstr "AutoIncr Id"
+
+# \demo\FMAutoIncr.xml
+msgid "F Id"
+msgstr "F Id"
+
+# \demo\FMCompKey.xml
+msgid "Composite key test"
+msgstr "Composite key test"
+
+# \demo\FMCompKey.xml
+msgid "Age"
+msgstr "Age"
+
+# \demo\FMEvent.xml
+# \demo\FMEventChild.xml
+msgid "Sports Events"
+msgstr "运动会"
+
+# \demo\FMEvent.xml
+# \demo\FMEventWzd2.xml
+# \demo\FMNewEventWzd2.xml
+# \shared\FMCalDetail.xml
+# \shared\FMCalendar.xml
+msgid "End"
+msgstr "Fin"
+
+# \demo\FMEvent.xml
+# \demo\FMEventWzd2.xml
+# \demo\FMNewEventWzd2.xml
+# \shared\FMCalDetail.xml
+# \shared\FMCalendar.xml
+msgid "Start"
+msgstr "Inicio"
+
+# \demo\FMEvent.xml
+# \shared\FMCalDetail.xml
+# \shared\FMCalendar.xml
+msgid "Location"
+msgstr "Location"
+
+# \demo\FMEvent.xml
+# \demo\FMEventWzd1.xml
+# \demo\FMNewEventWzd1.xml
+msgid "Host"
+msgstr "Host"
+
+# \demo\FMEventTree.xml
+# \demo\Tabs.xml
+msgid "Events"
+msgstr "Evenements"
+
+# \demo\FMEventTree.xml
+# \main\FO\FMNewVendor.xml
+# \main\FO\FMNewVendorAccount.xml
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "Id"
+msgstr "Id"
+
+# \demo\FMEventTree.xml
+msgid "PId"
+msgstr "PId"
+
+# \demo\FMEventWzd1.xml
+msgid "Event information:"
+msgstr "Event information:"
+
+# \demo\FMEventWzd1.xml
+# \demo\FMEventWzd2.xml
+# \demo\FMNewEventWzd1.xml
+# \demo\FMNewEventWzd2.xml
+# \main\FO\FMNewVendor.xml
+# \main\FO\FMNewVendorAccount.xml
+msgid "< Back"
+msgstr "< Back"
+
+# \demo\FMEventWzd1.xml
+# \demo\FMEventWzd2.xml
+# \demo\FMNewEventWzd1.xml
+# \demo\FMNewEventWzd2.xml
+# \main\FO\FMNewVendor.xml
+# \main\FO\FMNewVendorAccount.xml
+msgid "Next >"
+msgstr "Next >"
+
+# \demo\FMEventWzd1.xml
+# \demo\FMEventWzd2.xml
+# \demo\FMNewEventWzd1.xml
+# \demo\FMNewEventWzd2.xml
+# \main\FO\FMNewVendorAccount.xml
+msgid "Finish"
+msgstr "Finish"
+
+# \demo\FMEventWzd2.xml
+msgid "Event time:"
+msgstr "Event time:"
+
+# \demo\FMFieldDepTest.xml
+msgid "Test field dependency"
+msgstr "Test field dependency"
+
+# \demo\FMFieldDepTest.xml
+msgid "event test combobox"
+msgstr "event test combobox"
+
+# \demo\FMFieldDepTest.xml
+msgid "enable/disable switch"
+msgstr "enable/disable switch"
+
+# \demo\FMFieldDepTest.xml
+msgid "hide/show switch"
+msgstr "hide/show switch"
+
+# \demo\FMFieldDepTest.xml
+msgid "cascade combobox"
+msgstr "cascade combobox"
+
+# \demo\FMFieldDepTest.xml
+msgid "change value with js function"
+msgstr "change value with js function"
+
+# \demo\FMNewEventWzd1.xml
+msgid "Enter event information:"
+msgstr "Enter event information:"
+
+# \demo\FMNewEventWzd2.xml
+msgid "Enter event time:"
+msgstr "Enter event time:"
+
+# \demo\FMRegist.xml
+# \demo\FMReport.xml
+msgid "Registration Id"
+msgstr "Registration Id"
+
+# \demo\FMRegist.xml
+# \demo\FMReport.xml
+msgid "Fee"
+msgstr "Fee"
+
+# \demo\FMRegist.xml
+msgid "On Schedule"
+msgstr "On Schedule"
+
+# \demo\FMReport.xml
+msgid "Events Summary"
+msgstr "Events Summary"
+
+# \demo\FMReport.xml
+msgid "Event Name"
+msgstr "Event Name"
+
+# \demo\FMReport.xml
+msgid "Attendee Name"
+msgstr "Attendee Name"
+
+# \demo\FMRichText.xml
+msgid "Test rich text editor"
+msgstr "Test rich text editor"
+
+# \demo\FMRichText.xml
+msgid "rich text editor"
+msgstr "rich text editor"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata\demo\Menus.xml
+msgid "Yahoo"
+msgstr "Yahoo"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata\demo\Menus.xml
+msgid "Yahoo email"
+msgstr "Yahoo email"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata\demo\Menus.xml
+msgid "Yahoo finance ..."
+msgstr "Yahoo finance ..."
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata\demo\Menus.xml
+msgid "Today's market"
+msgstr "Today's market"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata\demo\Menus.xml
+msgid "News"
+msgstr "News"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata\demo\Menus.xml
+msgid "Wizard tests"
+msgstr "Wizard tests"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata\demo\Menus.xml
+msgid "Create an event"
+msgstr "Create an event"
+
+# D:\Apache2\htdocs\ob22\demoapp/metadata\demo\Menus.xml
+msgid "Edit an event (Id=EVT_2)"
+msgstr "Edit an event (Id=EVT_2)"
+
+# \demo\Selection.xml
+msgid "0"
+msgstr "0"
+
+# \demo\Selection.xml
+msgid "15"
+msgstr "15"
+
+# \demo\Selection.xml
+msgid "20"
+msgstr "20"
+
+# \demo\Selection.xml
+msgid "25"
+msgstr "25"
+
+# \demo\Selection.xml
+# \demo\Selection.xml
+msgid "Y"
+msgstr "Y"
+
+# \demo\Selection.xml
+# \demo\Selection.xml
+msgid "N"
+msgstr "N"
+
+# \demo\Selection.xml
+msgid "Individual"
+msgstr "Individual"
+
+# \demo\Selection.xml
+msgid "Team"
+msgstr "Team"
+
+# \demo\Selection.xml
+msgid "BarLine Chart"
+msgstr "BarLine Chart"
+
+# \demo\Selection.xml
+msgid "Pie Chart"
+msgstr "Pie Chart"
+
+# \demo\Selection.xml
+msgid "GroupBar Chart"
+msgstr "GroupBar Chart"
+
+# \demo\Selection.xml
+msgid "[Select]"
+msgstr "[Select]"
+
+# \demo\Selection.xml
+msgid "Disable Controls"
+msgstr "Disable Controls"
+
+# \demo\Selection.xml
+msgid "Enable Controls"
+msgstr "Enable Controls"
+
+# \demo\Selection.xml
+msgid "Hide Controls"
+msgstr "Hide Controls"
+
+# \demo\Selection.xml
+msgid "Disable Controls - 1"
+msgstr "Disable Controls - 1"
+
+# \demo\Selection.xml
+msgid "Disable Controls - 2"
+msgstr "Disable Controls - 2"
+
+# \demo\Selection.xml
+msgid "Disable Controls - 3"
+msgstr "Disable Controls - 3"
+
+# \demo\Selection.xml
+msgid "Enable Controls - 1"
+msgstr "Enable Controls - 1"
+
+# \demo\Selection.xml
+msgid "Enable Controls - 2"
+msgstr "Enable Controls - 2"
+
+# \demo\Selection.xml
+msgid "Enable Controls - 3"
+msgstr "Enable Controls - 3"
+
+# \demo\Tabs.xml
+msgid "Home"
+msgstr "Accueil"
+
+# \demo\Tabs.xml
+msgid "Reports"
+msgstr "Rapports"
+
+# \demo\Tabs.xml
+msgid "Test 2.1 Features"
+msgstr "Test 2.1 Features"
+
+# \main\FO\FMNewVendor.xml
+msgid "Vendor's Information"
+msgstr "Vendor's Information"
+
+# \main\FO\FMNewVendor.xml
+msgid "Second Name"
+msgstr "Second Name"
+
+# \main\FO\FMNewVendor.xml
+msgid "Category"
+msgstr "Category"
+
+# \main\FO\FMNewVendor.xml
+msgid "Sub Type"
+msgstr "Sub Type"
+
+# \main\FO\FMNewVendor.xml
+msgid "Parent Vendor"
+msgstr "Parent Vendor"
+
+# \main\FO\FMNewVendorAccount.xml
+# \main\FO\FMNewVendorAccount.xml
+msgid "Comments"
+msgstr "Comments"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "vendor_id"
+msgstr "vendor_id"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "account_type"
+msgstr "account_type"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "Status"
+msgstr "Status"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "Rating"
+msgstr "Rating"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "category"
+msgstr "category"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "status_change_date"
+msgstr "status_change_date"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "status_change_reason"
+msgstr "status_change_reason"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "division_id"
+msgstr "division_id"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "createby"
+msgstr "createby"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "createdt"
+msgstr "createdt"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "updateby"
+msgstr "updateby"
+
+# \main\FO\FMNewVendorAccount.xml
+msgid "updatedt"
+msgstr "updatedt"
+
+# \shared\FMAttachment.xml
+msgid "Attachment"
+msgstr "Attachment"
+
+# \shared\FMAttachment.xml
+msgid "File Id"
+msgstr "File Id"
+
+# \shared\FMAttachment.xml
+msgid "Parent Id"
+msgstr "Parent Id"
+
+# \shared\FMAttachment.xml
+msgid "File Name"
+msgstr "File Name"
+
+# \shared\FMAttachment.xml
+msgid "File Size"
+msgstr "File Size"
+
+# \shared\FMAttachment.xml
+# \shared\FMImportPopup.xml
+msgid "File"
+msgstr "Archivo"
+
+# \shared\FMAttachment.xml
+msgid "Parent Name"
+msgstr "Parent Name"
+
+# \shared\FMAuth.xml
+msgid "Event Managment System"
+msgstr "Event Managment System"
+
+# \shared\FMAuth.xml
+msgid "User Id"
+msgstr "User Id"
+
+# \shared\FMAuth.xml
+msgid "Password"
+msgstr "Password"
+
+# \shared\FMAuth.xml
+# \shared\FMImportPopup.xml
+msgid "Submit"
+msgstr "Submit"
+
+# \shared\FMCalAttendee.xml
+msgid "Event Attendees"
+msgstr "Event Attendees"
+
+# \shared\FMCalAttendee.xml
+msgid "Company"
+msgstr "Company"
+
+# \shared\FMCalAttendee.xml
+msgid "Title"
+msgstr "Title"
+
+# \shared\FMCalAttendee.xml
+msgid "Contact Info"
+msgstr "Contact Info"
+
+# \shared\FMCalAttendee.xml
+msgid "Show Schedule"
+msgstr "Show Schedule"
+
+# \shared\FMCalAttendee.xml
+msgid "Show Attendee List"
+msgstr "Show Attendee List"
+
+# \shared\FMCalDetail.xml
+msgid "Calendar Event"
+msgstr "Calendario de visitas"
+
+# \shared\FMCalDetail.xml
+# \shared\FMCalendar.xml
+msgid "Subject"
+msgstr "Subject"
+
+# \shared\FMCalDetail.xml
+# \shared\FMCalendar.xml
+msgid "Notes"
+msgstr "Notes"
+
+# \shared\FMCalDetail.xml
+msgid "Repeated"
+msgstr "Repetido"
+
+# \shared\FMCalDetail.xml
+msgid "Repeat Cycle"
+msgstr "Ciclo de repetición"
+
+# \shared\FMCalDetail.xml
+msgid "Repeat End"
+msgstr "Fin de repetición"
+
+# \shared\FMCalendar.xml
+msgid "Calendar"
+msgstr "Calendar"
+
+# \shared\FMCalendar.xml
+msgid "New Event"
+msgstr "New Event"
+
+# \shared\FMCalendar.xml
+msgid "Today"
+msgstr "Hoy"
+
+# \shared\FMCalendar.xml
+msgid "Day"
+msgstr "Día"
+
+# \shared\FMCalendar.xml
+msgid "Week"
+msgstr "Semana"
+
+# \shared\FMCalendar.xml
+msgid "Month"
+msgstr "Mes"
+
+# \shared\FMCalendar.xml
+msgid "All Events"
+msgstr "All Events"
+
+# \shared\FMImportPopup.xml
+msgid "Upload File"
+msgstr "Upload File"
+
+# \shared\FMImportPopup.xml
+msgid "Done"
+msgstr "Done"
+
+# \shared\Selection.xml
+msgid "Meeting"
+msgstr "Reunión"
+
+# \shared\Selection.xml
+msgid "Appointment"
+msgstr "Cita"
+
+# \shared\Selection.xml
+msgid "Birthday"
+msgstr "Fecha de nacimiento"
+
+# \shared\Selection.xml
+msgid "Every day"
+msgstr "Cada day"
+
+# \shared\Selection.xml
+msgid "Every week"
+msgstr "Cada semana"
+
+# \shared\Selection.xml
+msgid "Every month"
+msgstr "Cada mes"
+
+# \shared\Selection.xml
+msgid "Every year"
+msgstr "Cada año"
+
+# \test\FM_Attendees.xml
+msgid "lastname"
+msgstr "lastname"
+
+# \test\FM_Attendees.xml
+msgid "firstname"
+msgstr "firstname"
+
+# \test\FM_Attendees.xml
+msgid "othername"
+msgstr "othername"
+
+# \test\FM_Attendees.xml
+msgid "phone"
+msgstr "phone"
+
+# \test\FM_Attendees.xml
+msgid "email"
+msgstr "email"
+
+# \test\FM_Attendees.xml
+msgid "address"
+msgstr "address"
+
+# \test\FM_Attendees.xml
+# \test\FM_Test.xml
+msgid "description"
+msgstr "description"
+
+# \test\FM_Test.xml
+msgid "Form Title"
+msgstr "Form Title"
+
+# \test\FM_Test.xml
+msgid "name"
+msgstr "name"
+
+# \test\FM_Test.xml
+msgid "f_id"
+msgstr "f_id"
+

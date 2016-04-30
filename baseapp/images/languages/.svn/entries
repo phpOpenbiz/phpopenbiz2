@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="237"
+   name=""
+   committed-date="2008-03-19T07:05:49.951801Z"
+   url="https://bigchef.svn.sourceforge.net/svnroot/bigchef/branches/2.3/baseapp/images/languages"
+   last-author="rockys"
+   kind="dir"
+   repos="https://bigchef.svn.sourceforge.net/svnroot/bigchef"
+   revision="237"/>
+<entry
+   committed-rev="237"
+   name="Thumbs.db"
+   text-time="2008-03-19T07:04:30.606000Z"
+   committed-date="2008-03-19T07:05:49.951801Z"
+   checksum="7d1d703617f7386ac0ba133eb6934447"
+   last-author="rockys"
+   kind="file"
+   prop-time="2008-03-19T07:04:59.840375Z"/>
+<entry
+   committed-rev="237"
+   name="lang_en.gif"
+   text-time="2007-11-16T08:51:39.269625Z"
+   committed-date="2008-03-19T07:05:49.951801Z"
+   checksum="a6fde14537c3d2001db644d3e187cb72"
+   last-author="rockys"
+   kind="file"
+   prop-time="2008-03-19T07:04:59.731000Z"/>
+<entry
+   committed-rev="237"
+   name="lang_es.gif"
+   text-time="2007-11-16T08:52:01.425875Z"
+   committed-date="2008-03-19T07:05:49.951801Z"
+   checksum="703cbe4106883cf8dc16e23ca899e6de"
+   last-author="rockys"
+   kind="file"
+   prop-time="2008-03-19T07:04:59.824750Z"/>
+</wc-entries>

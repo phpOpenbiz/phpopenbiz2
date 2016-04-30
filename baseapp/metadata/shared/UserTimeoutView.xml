@@ -1,0 +1,3 @@
+<?xml version="1.0" standalone="no"?>
+<BizView Name="UserTimeoutView" Description="User timeout" Package="shared" Class="BizView" Template="usertimeout.tpl">
+</BizView>

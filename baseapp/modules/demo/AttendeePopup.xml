@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizForm Name="AttendeePopup" Description="Select an attendee" Package="demo" Class="BizFormPopup" jsClass="jbForm" Title="" BizDataObj="BOAttendee" PageSize="10" Width="600" Height="400" SearchRule="">
+   <DisplayModes>
+      <Mode Name="QUERY" TemplateFile="edit.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="READ" TemplateFile="list.tpl" InitMode="" DataFormat="block" FormatStyle="tbl"/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="attd_id" FieldName="Id" DisplayName="Attendee Id" Type="" Width="" Height="" HTMLAttr="" Function="" Hidden="" Enabled="" Order="" Style="" SelectBizForm="" SelectFrom="" DisplayMode=""/>
+      <BizCtrl Name="attd_fname" FieldName="FirstName" DisplayName="First Name" Type="" Width="" Height="" HTMLAttr="" Function="" Hidden="" Enabled="" Order="" Style="" SelectBizForm="" SelectFrom="" DisplayMode=""/>
+      <BizCtrl Name="attd_lname" FieldName="LastName" DisplayName="Last Name" Type="" Width="" Height="" HTMLAttr="" Function="" Hidden="" Enabled="" Order="" Style="" SelectBizForm="" SelectFrom="" DisplayMode=""/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_select" Image="" Caption="Select" Type="button" Width="" Height="" HTMLAttr="" Function="SelectToParent()" Style="" Hidden="" Enabled="" SelectFrom="" DisplayMode="READ" Access=""/>
+      <Control Name="btn_search" Caption="Search" Type="button" Style="" Function="SearchRecord()" DisplayMode="READ"/>
+      <Control Name="btn_dosearch" Caption="Go" Type="button" Style="" Function="RunSearch()" DisplayMode="QUERY"/>
+      <Control Name="btn_cancel" Caption="Cancel" Type="button" Style="" Function="Cancel()" DisplayMode="QUERY"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" Width="" Height="" HTMLAttr="" Function="NextPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+      <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" Width="" Height="" HTMLAttr="" Function="PrevPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+   </Navbar> 
+</BizForm>

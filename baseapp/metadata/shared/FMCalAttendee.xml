@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMCalAttendee" Package="shared" Class="FMCalAttendee" jsClass="jbForm" Title="Event Attendees" BizDataObj="BOCalAttendee" SearchRule="" PageSize="10">
+   <DisplayModes>
+      <Mode Name="QUERY" TemplateFile="caldetail.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="EDIT" TemplateFile="caldetail.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="NEW" TemplateFile="caldetail.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="READ" TemplateFile="calendar.tpl" InitMode="" DataFormat="block" FormatStyle="tbl"/>
+      <Mode Name="SCHEDULE" TemplateFile="list_schd.tpl" InitMode="" DataFormat="block" FormatStyle=""/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="atd_id" FieldName="Id" DisplayName="Attendee Id" Hidden="Y"/>
+      <BizCtrl Name="atd_fname" FieldName="FName" DisplayName="First Name"/>
+      <BizCtrl Name="atd_lname" FieldName="LName" DisplayName="Last Name"/>
+      <BizCtrl Name="atd_cmpny" FieldName="Company" DisplayName="Company"/>
+      <BizCtrl Name="atd_title" FieldName="Title" DisplayName="Title"/>
+      <BizCtrl Name="atd_ctc" FieldName="Contact" DisplayName="Contact Info"/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_new" Image="" Caption="Add" Type="Button" Function="ShowPopup(demo.FMAttendeePopup)" FunctionType="Popup" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_search" Image="" Caption="Search" Type="Button" Function="SearchRecord()" Style="" Enabled="" DisplayMode="READ" Access="READ"/>
+      <Control Name="btn_dosearch" Image="" Caption="Search" Type="Button" Function="RunSearch()" Style="" Enabled="" DisplayMode="QUERY" Access=""/>
+      <Control Name="btn_delete" Image="" Caption="Delete" Type="button" Style="" Function="RemoveRecord()" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_cancel" Image="" Caption="Cancel" Type="Button" Function="Cancel()" Style="" Enabled="" DisplayMode="EDIT|NEW|QUERY" Access="WRITE"/>
+      <!--<Control Name="btn_sch" Image="" Caption="Show Schedule" Type="button" Style="" Function="ShowSchedule()" DisplayMode="READ" Access="WRITE"/>
+      <Control Name="btn_attdlist" Image="" Caption="Show Attendee List" Type="button" Function="ShowAttendees()" DisplayMode="SCHEDULE" Access=""/>-->
+   </Toolbar> 
+   <Navbar>
+      <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" Function="NextPage()" />
+      <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" Function="PrevPage()" />
+   </Navbar> 
+</BizForm>

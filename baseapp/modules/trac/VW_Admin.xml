@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizView Class="BizView" Description="Add description of BizView" Name="VW_Admin" Package="trac" Template="view_trac_admin.tpl">
+   <ControlList>
+   <Control Form="trac.Tabs" Name="form_tabs"/>
+<Control Form="trac.FM_Component" Name="form_comp"/>
+<Control Form="trac.FM_Milestone" Name="form_milestone"/>
+<Control Form="trac.FM_Enum" Name="form_enum"/>
+<Control Form="trac.FM_Version" Name="form_version"/>
+</ControlList>
+</BizView>

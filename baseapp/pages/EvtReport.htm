@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title></title>
+  <script language="javascript" src="../js/clientUtil.js"></script>
+  <link rel="stylesheet" href="../css/openbiz.css" type="text/css">
+</head>
+<body bgcolor="#EDEDED">
+<table width=100% border=0 cellspacing=0 cellpadding=20>
+  <tr><td>
+   <table width=100% border=0 cellspacing=1 cellpadding=3 class=tbl>
+   <tr><th>Report Name</th>
+   <th>HTML report</th>
+   <th>PDF report</th>
+   </tr>
+   <tr><td>Event summary report</td>
+   <td><a href="../bin/controller.php?view=demo.ReportView"" target="_blank">HTML</a></td>
+   <td>
+   <a href="../bin/controller.php?F=Invoke&P0=[service.pdfService]&P1=[renderView]&P2=[demo.ReportView]" target="_blank">PDF</a>
+   <!--<a href="javascript:alert('Due to the incompatibility between PHP5 DOM and Zend optimizer, this feature is not supported until the bug is fixed.')">PDF</a>-->
+   </td>
+   </tr>
+   </table>
+   </td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<Tabs Name="Tabs" Package="demo" Class="HTMLTabs" TemplateFile="tabs.tpl">
+   <TabViews>
+      <View Name="home" URL="./home.php" Caption="Home"/>
+      <View Name="event" URL="" View="demo.EventView" ViewSet="EventSet" Caption="Events" Icon=""/>
+      <View Name="regist" URL="" View="demo.RegistView" Caption="Registration" Icon=""/>
+      <View Name="attendee" URL="" View="demo.AttendeeView" Caption="Attendees" Icon=""/>
+      <View Name="reports" URL="./report.php" Caption="Reports" Icon=""/>
+      <View Name="test" URL="" View="demo.FieldDepTestView" Caption="UI Components" Icon=""/>
+   </TabViews>
+</Tabs>

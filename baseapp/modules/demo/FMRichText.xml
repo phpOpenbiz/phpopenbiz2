@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMRichText" Package="demo" Class="BizForm" jsClass="jbForm" Title="Test rich text editor" BizDataObj=""> 
+   <DisplayModes>
+      <Mode Name="EDIT" TemplateFile="edit.tpl" InitMode="" DataFormat="array"/>
+   </DisplayModes>
+   <BizCtrlList>
+   <BizCtrl Name="richedit" FieldName="" DisplayName="rich text editor" Type="RichText" Width="600" Height="200" Style="border:1px solid gray;">
+   </BizCtrl>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_submit" Image="" Caption="Submit" Type="Button" HTMLAttr="onclick=&quot;updateRTEs()&quot;" />
+   </Toolbar> 
+   <Navbar>
+   </Navbar> 
+</BizForm>

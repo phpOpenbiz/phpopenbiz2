@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizForm BizDataObj="trac.DO_TicketChange" Class="BizForm_Lite" Description="Add description of BizForm" FullPage="N" InheritFrom="" Name="FM_TicketChange" Package="trac" PageSize="" SearchRule="" Title="Change history" jsClass="jbForm">
+   <DisplayModes>
+      
+      
+      
+      <Mode DataFormat="table" FormatStyle="" Name="READ" TemplateFile="list_ticket_change.tpl"/>
+   </DisplayModes>
+   <BizCtrlList>
+   <BizCtrl DisplayName="Id" FieldName="Id" Name="bctrl_Id"/>
+<BizCtrl DisplayName="ticket" FieldName="ticket" Name="bctrl_ticket"/>
+<BizCtrl DisplayName="time" FieldName="time" Name="bctrl_time"/>
+<BizCtrl DisplayName="author" FieldName="author" Name="bctrl_author"/>
+<BizCtrl DisplayName="field" FieldName="field" Name="bctrl_field"/>
+<BizCtrl DisplayName="oldvalue" FieldName="oldvalue" Name="bctrl_oldvalue"/>
+<BizCtrl DisplayName="newvalue" FieldName="newvalue" Name="bctrl_newvalue"/>
+</BizCtrlList>
+   <Toolbar>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   </Toolbar> 
+   <Navbar>
+      <Control Caption="Next" DisplayMode="READ" Function="NextPage()" Image="next.gif" Name="btn_next" Type="Button"/>
+      <Control Caption="Previous" DisplayMode="READ" Function="PrevPage()" Image="prev.gif" Name="btn_prev" Type="Button"/>
+      <Control Caption="Last" DisplayMode="READ" Function="GotoPage(-1)" Image="nextlast.gif" Name="btn_last" Type="Button"/>
+      <Control Caption="First" DisplayMode="READ" Function="GotoPage(1)" Image="prevfirst.gif" Name="btn_first" Type="Button"/>
+   </Navbar> 
+</BizForm>

@@ -95,27 +95,32 @@ class I18n{
 		$app_language_path= APP_HOME."/".I18n::LANGUAGE_PATH_1."/".$lang."/".I18n::LANGUAGE_PATH_2."/"."lang.".$lang.".mo";
 		$phpopenbiz_language_path= OPENBIZ_HOME."/".I18n::LANGUAGE_PATH_1."/".$lang."/".I18n::LANGUAGE_PATH_2."/"."lang.".$lang.".mo";
 		$noMoAppFile=false;
-		try
+		if (file_exists($app_language_path))
 		{
-			$zTransApp=new Zend_Translate('gettext',$app_language_path, $lang);
-			$this->zTrans[$lang]['app']=$zTransApp;
-		}
-		catch(Exception $e)
-		{
-			$noAppMoFile= true;
+		   try
+   		{
+   			$zTransApp=new Zend_Translate('gettext',$app_language_path, $lang);
+   			$this->zTrans[$lang]['app']=$zTransApp;
+   		}
+   		catch(Exception $e)
+   		{
+   			$noAppMoFile= true;
+   		}
 		}
 
 		$noPHPopenbizMoFile= false;
-
-		try
-		{
-			$zTransPHPopenbiz= new Zend_Translate('gettext',$phpopenbiz_language_path, $lang);
-			$this->zTrans[$lang]['phpopenbiz']=$zTransPHPopenbiz;
-		}
-		catch(Exception $e)
-		{
-			$noPHPopenbizMoFile= true;
-		}
+      if (file_exists($phpopenbiz_language_path))
+      {
+   		try
+   		{
+   			$zTransPHPopenbiz= new Zend_Translate('gettext',$phpopenbiz_language_path, $lang);
+   			$this->zTrans[$lang]['phpopenbiz']=$zTransPHPopenbiz;
+   		}
+   		catch(Exception $e)
+   		{
+   			$noPHPopenbizMoFile= true;
+   		}
+      }
 
 		$result = true;
 		if ($noPHPopenbizMoFile == true && $noAppMoFile == true)

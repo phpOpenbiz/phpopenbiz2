@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMCalendar" Package="shared" Class="FMCalendar" jsClass="jbForm" Title="Calendar" SearchRule="" Description="" BizDataObj="BOCalendar" PageSize="10">
+   <DisplayModes>
+      <Mode Name="LIST" TemplateFile="calendar.tpl" InitMode="" DataFormat="block" FormatStyle="tbl,tbl_head,tbl_rowodd,tbl_roweven,tbl_rowodd,tbl_cell"/>
+      <Mode Name="DAY" TemplateFile="calendar.tpl" InitMode="" DataFormat="block" FormatStyle=""/>
+      <Mode Name="WEEK" TemplateFile="calendar.tpl" InitMode="" DataFormat="block" FormatStyle=""/>
+      <Mode Name="MONTH" TemplateFile="calendar.tpl" InitMode="" DataFormat="block" FormatStyle=""/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="evt_id" FieldName="Id" DisplayName="Event Id"/>
+      <BizCtrl Name="evt_sub" FieldName="Subject" DisplayName="Subject" DrillDownLink="CalDetailView,FMCalDetail.evt_id=evt_id"/>
+      <BizCtrl Name="evt_type" FieldName="Type" DisplayName="Type"/>
+      <BizCtrl Name="evt_loc" FieldName="Location" DisplayName="Location"/>
+      <BizCtrl Name="evt_note" FieldName="Notes" DisplayName="Notes"/>
+      <BizCtrl Name="evt_start" FieldName="Start" DisplayName="Start" Type="Datetime"/>
+      <BizCtrl Name="evt_end" FieldName="End" DisplayName="End" Type="Datetime"/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_add" Image="" Caption="New Event" Type="Button" Link="controller.php?view=shared.CalDetailView&amp;form=shared.FMCalDetail&amp;mode=NEW"/>
+      <Control Name="btn_today" Image="" Caption="Today" Type="Button" Function="ShowToday()"/>
+      <Control Name="btn_day" Image="" Caption="Day" Type="Button" Function="ShowDay()"/>
+      <Control Name="btn_week" Image="" Caption="Week" Type="Button" Function="ShowWeek()"/>
+      <Control Name="btn_month" Image="" Caption="Month" Type="Button" Function="ShowMonth()"/>
+      <Control Name="btn_all" Image="" Caption="All Events" Type="Button" Function="ShowList()"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" Function="NextPage()"/>
+      <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" Function="PrevPage()"/>
+   </Navbar> 
+</BizForm>

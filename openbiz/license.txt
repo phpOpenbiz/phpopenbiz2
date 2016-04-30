@@ -1,4 +1,4 @@
-BSD Style-License for OpenBiz 
+BSD Style-License for OpenBiz
 =========================================================================================================
 
 Copyright (c) 2003 Rocky Swen

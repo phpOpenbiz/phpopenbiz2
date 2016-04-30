@@ -40,8 +40,7 @@ class authService
       if (!$boAuth)
          return false;
       $searchRule = "[User Id]='$userid' AND [Password]='$password'";
-	   $recordList = array();
-	   $boAuth->FetchRecords($searchRule, $recordList, 1);
+	   $recordList = $boAuth->DirectFetch($searchRule, 1);
 	   if (count($recordList) == 1) 
 	      return true;
 

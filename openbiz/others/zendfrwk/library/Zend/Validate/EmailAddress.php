@@ -173,7 +173,6 @@ class Zend_Validate_EmailAddress extends Zend_Validate_Abstract
 
         $this->_localPart = $matches[1];
         $this->_hostname  = $matches[2];
-
         // Match hostname part
         $hostnameResult = $this->hostnameValidator->isValid($this->_hostname);
         if (!$hostnameResult) {

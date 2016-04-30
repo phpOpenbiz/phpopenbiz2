@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no"?>
+<Selection>
+   <Fee Value="0"/>
+   <Fee Value="15"/>
+   <Fee Value="20"/>
+   <Fee Value="25"/>
+   
+   <NY Value=""/>
+   <NY Value="Y"/>
+   <NY Value="N"/>
+   
+   <BOOL Value="Y"/>
+   <BOOL Value="N"/>
+   
+   <AttdType Value=""/>
+   <AttdType Value="Individual"/>
+   <AttdType Value="Team"/>
+   
+   <ChartOption Value="AAA" Text="BarLine Chart"/>
+   <ChartOption Value="BBB" Text="Pie Chart"/>
+   <ChartOption Value="CCC" Text="GroupBar Chart"/>
+
+   <TestEvent Text="[Select]" Value="Default"/>   
+   <TestEvent Text="Disable Controls" Value="DsblCtrl"/>
+   <TestEvent Text="Enable Controls" Value="EnblCtrl"/>
+   <TestEvent Text="Hide Controls" Value="HideCtrl"/>
+   
+   <DsblCtrl_opt Value="Disable Controls - 1"/>
+   <DsblCtrl_opt Value="Disable Controls - 2"/>
+   <DsblCtrl_opt Value="Disable Controls - 3"/>
+   
+   <EnblCtrl_opt Value="Enable Controls - 1"/>
+   <EnblCtrl_opt Value="Enable Controls - 2"/>
+   <EnblCtrl_opt Value="Enable Controls - 3"/>
+   
+   <Host Value="NCCAF"/>
+   <Host Value="NBA"/>
+   <Host Value="NFL"/>
+   <Host Value="PGA"/>
+   <Host Value="NCAA"/>
+   <Host Value="ABC"/>
+   <Host Value="CBS"/>
+   <Host Value="NBC"/>
+   
+   
+   
+</Selection>

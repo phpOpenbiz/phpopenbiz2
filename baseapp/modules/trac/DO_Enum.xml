@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizDataObj Class="BizDataObj" DBName="Trac" Description="Add description of BizDataObj" IdGeneration="Identity" InheritFrom="" Name="DO_Enum" OtherSQLRule="" Package="trac" SearchRule="" SortRule="" Table="enum">
+	<BizFieldList>
+   <BizField Column="id" Name="Id"/>
+<BizField Column="type" Name="type" Type="Text"/>
+<BizField Column="name" Name="name" Type="Text"/>
+<BizField Column="value" Name="value" Type="Text"/>
+</BizFieldList>
+   <TableJoins>
+   </TableJoins>
+   <ObjReferences>
+   </ObjReferences>
+</BizDataObj>

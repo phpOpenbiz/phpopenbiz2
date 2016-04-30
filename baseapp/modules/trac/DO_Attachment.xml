@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizDataObj Class="BizDataObj" DBName="Trac" Description="Add description of BizDataObj" IdGeneration="Identity" InheritFrom="" Name="DO_Attachment" OtherSQLRule="" Package="trac" SearchRule="" SortRule="" Table="attachment">
+	<BizFieldList>
+   <BizField Column="id" Name="Id"/>
+<BizField Column="parent_id" Name="parent_id" Type="Text"/>
+<BizField Column="filename" Name="filename" Type="Text"/>
+<BizField Column="type" Name="type" Type="Text"/>
+<BizField Column="size" Name="size" Type="Number"/>
+<BizField Column="time" Name="time" Type="Datetime" ValueOnCreate="{date('Y-m-d H:i:s')}" ValueOnUpdate="{date('Y-m-d H:i:s')}"/>
+<BizField Column="description" Name="description" Type="Text"/>
+<BizField Column="author" Name="author" Type="Text"/>
+<BizField Column="ipnr" Name="ipnr" Type="Text"/>
+</BizFieldList>
+   <TableJoins>
+   </TableJoins>
+   <ObjReferences>
+   </ObjReferences>
+</BizDataObj>

@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+
+<BizForm Name="FMEventChild" Package="demo" Class="BizForm" jsClass="jbForm" InheritFrom="demo.FMEvent" Title="Sports Events" SearchRule="" Description="Event BizForm" BizDataObj="BOEvent" PageSize="3">
+   <DisplayModes>
+      <Mode Name="READ" TemplateFile="edit.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl DisplayName="" FieldName="Id" Name="row_selections" Class="RowSelector" DisplayMode="READ" Hidden="Y"/>
+   </BizCtrlList>
+   <Toolbar>
+    <Control Name="btn_new" Hidden="Y"/>
+    <Control Name="btn_search" Hidden="Y"/>
+    <Control Name="btn_delete" Hidden="Y"/>
+   <Control Name="btn_edit" Hidden="Y"/>
+      <Control Name="btn_copy" Hidden="Y"/>
+      <Control Name="btn_refresh" Hidden="Y"/>
+      <Control Name="btn_report" Hidden="Y"/>
+      <Control Name="btn_excel" Hidden="Y"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Name="btn_next" Hidden="Y"/>
+      <Control Name="btn_prev" Hidden="Y"/>
+   </Navbar> 
+</BizForm>

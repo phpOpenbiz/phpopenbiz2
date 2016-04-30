@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<BizView Name="ReportView" Description="Events Report" Package="demo" Class="BizView" Template="notab_view.tpl" AccessControl="">
+   <ControlList>
+   <Control Name="fm_report" Form="FMReport"/>
+   </ControlList>
+</BizView>

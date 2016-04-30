@@ -1,0 +1,175 @@
+.leftcol {
+border-right:2px solid #DDDDDD;
+padding-right:8px;
+padding-top:11px
+}
+
+.main {
+border-bottom:2px solid #DDDDDD;
+padding:13px 10px 20px 12px;
+vertical-align:top;
+width:100%;
+}
+
+h2, h1 {
+font-size:14px;
+color:#000000;
+font-family:Arial,Verdana,Helvetica,sans-serif;
+font-weight:bold;
+margin-bottom:0px;
+margin-top:0px;
+}
+
+h2.title {
+padding-left:2px;
+padding-bottom:5px;
+padding-top:5px;
+}
+
+h2.list_title {
+padding:6px 5px 4px 3px;
+border-bottom:2px solid #ABC3D7;
+border-top:2px solid #4E8CCF;
+}
+
+.listform {
+border:1px solid #ABC3D7; 
+padding-top:3px;
+}
+
+.tabDetailView {
+background-color:#CBDAE6;
+border-bottom:2px solid #ABC3D7;
+border-top:2px solid #4E8CCF;
+margin-bottom:10px;
+margin-top:2px;
+}
+
+.edit_label {
+background-color:#F6F6F6;
+border-bottom:1px solid #CBDAE6;
+color:#000000;
+font-size:12px;
+padding:5px 6px;
+text-align:right;
+vertical-align:top;
+}
+
+.edit_control {
+background-color:#FFFFFF;
+border-bottom:1px solid #CBDAE6;
+color:#444444;
+font-size:12px;
+padding:5px 10px 5px 8px;
+vertical-align:top;
+}
+
+.edit_label2 {
+background-color:#F6F6F6;
+color:#000000;
+font-size:12px;
+padding:2px 6px;
+text-align:right;
+vertical-align:top;
+}
+
+.edit_control2 {
+background-color:#FFFFFF;
+color:#444444;
+font-size:12px;
+padding:2px 10px 2px 8px;
+vertical-align:top;
+}
+
+input, select, textarea {border-color:#94C1E8;}
+
+
+.arrowlistmenu{
+width: 180px;
+}
+
+.arrowlistmenu .headerbar{
+font: bold 14px Arial;
+background-color:#FFFFFF;
+border-bottom:2px solid #ABC3D7;
+border-color:#ABC3D7;
+color:#666666;
+padding-bottom:4px;
+padding-left:6px;
+padding-top:2px;
+margin:0;
+text-align:left;
+}
+
+.arrowlistmenu ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-bottom: 8px; /*bottom spacing between each UL and rest of content*/
+
+}
+
+.arrowlistmenu ul li{
+padding-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.arrowlistmenu ul li a{
+color:#666666;
+background: url(media/arrowbullet.png) no-repeat center left; /*custom bullet list image*/
+display: block;
+padding: 2px 0;
+padding-left: 19px; /*link text is indented 19px*/
+text-decoration: none;
+border-bottom: 1px solid #CBDAE6;
+font: normal 12px Arial;
+}
+
+.arrowlistmenu ul li a:visited{
+color:#666666;
+}
+
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+color:#666666;
+background-color: #cedce9;
+}
+
+/* -------- table style -------- */
+.tbl_ticket { 
+   font-family:Arial; 
+   font-size:12px; 
+   border:0px solid gray; 
+   background-color:#FCFCFC; 
+   width:100% }
+
+.tbl_ticket .head { 
+   background-color:#D9D9D9; 
+   background-image: url(../images/bgGray.gif);
+   background-repeat: repeat-x;
+   background-position: bottom;
+   font-family:Arial; 
+   font-size:11px; 
+   color:#000000; 
+   text-align:left; 
+   border-left:1px solid white;
+   border-top:1px solid silver;
+   border-bottom:1px solid gray;
+   border-right:1px solid gray }
+
+.tbl_ticket .rowodd 
+{ background-color:#FCFCFC;}
+
+.tbl_ticket .roweven 
+{ background-color:#F0F0F0;}
+
+.tbl_ticket .rowsel 
+{ background-image: url(../images/blue_highlight.gif);
+   background-repeat: repeat-x; }
+
+.tbl_ticket .cell
+{ border-bottom:1px solid #CBDAE6; }
+
+.line_odd 
+{ background-color:#FCFCFC;}
+
+.line_even 
+{ background-color:#F0F0F0;}

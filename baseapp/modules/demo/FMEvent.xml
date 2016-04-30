@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizForm Name="FMEvent" Package="demo" Class="BizForm" jsClass="jbForm" Title="Sports Events" SearchRule="" Description="Event BizForm" BizDataObj="BOEvent" PageSize="3">
+   <DisplayModes>
+      <Mode Name="QUERY" TemplateFile="edit_c2.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="EDIT" TemplateFile="edit_c2.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="NEW" TemplateFile="edit_c2.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="READ" TemplateFile="list.tpl" InitMode="" DataFormat="block" FormatStyle="tbl"/>
+   </DisplayModes>
+   <BizCtrlList>
+   <BizCtrl DisplayName="" FieldName="Id" Name="row_selections" Class="RowSelector" DisplayMode="READ"/>
+   <BizCtrl Name="evt_desc" FieldName="Description" DisplayName="Description" Type="Textarea" Width="250" Height="100" order="8" DisplayMode="EDIT|NEW|QUERY"/>
+   <BizCtrl Name="evt_end" FieldName="End" DisplayName="End" Type="Datetime" order="6" DisplayMode=""/>
+   <BizCtrl Name="evt_start" FieldName="Start" DisplayName="Start" Type="Datetime" order="5" DisplayMode=""/>
+   <BizCtrl Name="evt_loc" FieldName="Location" DisplayName="Location" Type="Textarea" Width="250" Height="50" order="4" DisplayMode=""/>
+   <BizCtrl Name="evt_host" FieldName="Host" DisplayName="Host" order="3" DisplayMode="" SelectFrom="demo.Selection(Host)" Type="Checkbox"/>
+   
+<BizCtrl Name="evt_name" FieldName="Name" DisplayName="Name" Type="" Width="250" Sortable="Y" Order="2" DisplayMode=""/>
+   <BizCtrl Name="evt_id" FieldName="Id" DisplayName="Event Id" Enabled="N" Order="1" DisplayMode=""/>
+   
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_search" Image="search.gif" Caption="Search" Type="Button" DisplayMode="READ">
+         <EventHandler Name="onclick" Event="onclick" Function="SearchRecord()" ShortcutKey="Ctrl+Shift+Q" ContextMenu="Search"/>
+      </Control>
+      <Control Name="btn_dosearch" Image="" Caption="Search" Type="button" DisplayMode="QUERY">
+         <EventHandler Name="onclick" Event="onclick" Function="RunSearch()" ShortcutKey="Enter"/>
+      </Control>
+      <Control Name="btn_edit" Image="edit.gif" Caption="Edit" Type="Button" DisplayMode="READ">
+         <EventHandler Name="onclick" Event="onclick" Function="EditRecord()" ShortcutKey="Ctrl+Shift+E" ContextMenu="Edit"/>
+      </Control>
+      <Control Name="btn_new" Image="new.gif" Caption="New" Type="Button" DisplayMode="READ">
+         <EventHandler Name="onclick" Event="onclick" Function="NewRecord()" ShortcutKey="Ctrl+Shift+N" ContextMenu="New"/>
+      </Control>
+      <Control Name="btn_save" Image="" Caption="Save" Type="Button" DisplayMode="EDIT|NEW">
+         <EventHandler Name="onclick" Event="onclick" Function="SaveRecord()" ShortcutKey="Enter"/>
+      </Control>
+      <Control Name="btn_copy" Image="copy.gif" Caption="Copy" Type="button" DisplayMode="READ">
+         <EventHandler Name="onclick" Event="onclick" Function="CopyRecord()" ShortcutKey="Ctrl+Shift+C"/>
+      </Control>
+      <Control Name="btn_delete" Image="delete.gif" Caption="Delete" Type="button" DisplayMode="READ">
+         <EventHandler Name="onclick" Event="onclick" Function="DeleteRecord()" ShortcutKey="Delete" ContextMenu="Delete"/>
+      </Control>
+      <Control Name="btn_cancel" Image="" Caption="Cancel" Type="Button" DisplayMode="EDIT|NEW|QUERY">
+         <EventHandler Name="onclick" Event="onclick" Function="Cancel()" ShortcutKey="Escape"/>
+      </Control>
+      <Control Name="btn_refresh" Image="refresh.gif" Caption="Default Query" Type="Button" DisplayMode="READ">
+         <EventHandler Name="onclick" Event="onclick" Function="RefreshQuery()" ShortcutKey="Ctrl+Shift+R" ContextMenu="Refresh"/>
+      </Control>
+      <Control Name="btn_excel" Image="excel.gif" Caption="Excel Export" Type="Button" DisplayMode="READ">
+         <EventHandler Name="onclick" Event="onclick" Function="CallService(excelService,renderCSV)" FunctionType="Popup"/>
+      </Control>
+   </Toolbar> 
+   <Navbar>
+   <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" DisplayMode="READ">
+      <EventHandler Name="onclick" Event="onclick" Function="NextPage()" ShortcutKey="Ctrl+Shift+Right"/>
+      <EventHandler Name="nextrecord" Event="" Function="NextRow()" ShortcutKey="Ctrl+Shift+Down"/>
+   </Control>
+   <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" DisplayMode="READ">
+      <EventHandler Name="onclick" Event="onclick" Function="PrevPage()" ShortcutKey="Ctrl+Shift+Left"/>
+      <EventHandler Name="prevrecord" Event="" Function="PrevRow()" ShortcutKey="Ctrl+Shift+Up"/>
+   </Control>
+   <Control Name="btn_last" Image="nextlast.gif" Caption="Last" Type="Button" Function="GotoPage(-1)" DisplayMode="READ"/>
+   <Control Name="btn_first" Image="prevfirst.gif" Caption="First" Type="Button" Function="GotoPage(1)" DisplayMode="READ"/>
+   </Navbar> 
+</BizForm>

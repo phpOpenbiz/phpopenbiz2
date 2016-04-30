@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizForm BizDataObj="trac.DO_Ticket" Class="BizForm_Lite" Description="Tickets" FullPage="N" InheritFrom="" Name="FM_Ticket_Search" Package="trac" SearchRule="" Title="Search Tickets" jsClass="jbForm">
+   <DisplayModes>
+      <Mode DataFormat="array" Name="QUERY" TemplateFile="search_ticket.tpl"/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl DisplayName="Id" FieldName="Id" Name="search_Id"/>
+      <BizCtrl DisplayName="summary" FieldName="summary" Name="search_summary" Type="Text" Width="200"/>
+      <BizCtrl DisplayName="component" FieldName="component" Name="search_component" SelectFrom="trac.DO_Component[Id]"/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Caption="Search" function="RunSearch(trac.FM_Ticket)" Image="" Name="btn_search" Type="Button"/>
+      <Control Caption="Reset" function="js:$('trac.FM_Ticket_Search').reset();" Image="" Name="btn_reset" Type="Button"/>
+   </Toolbar> 
+   <Navbar>
+   </Navbar> 
+</BizForm>

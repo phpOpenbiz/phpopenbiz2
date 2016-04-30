@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="no"?>
+<BizDataObj Name="BOCalAttendeeX" Description="Calendar Attendee BizDataObj" Package="shared" Class="BizDataObj" InheritFrom="shared.BOCalAttendee" DBName="" Table="calattds">
+	<BizFieldList>
+   </BizFieldList>
+</BizDataObj>

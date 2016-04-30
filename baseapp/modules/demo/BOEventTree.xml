@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizDataObj Name="BOEventTree" Description="Add description of BizDataObj" Package="demo" Class="BizDataObj" InheritFrom="" Table="EvenTs" SearchRule="" SortRule="" OtherSQLRule="" DBName="Default">
+	<BizFieldList>
+   <BizField Name="Id" Column="SYSID"/>
+<BizField Name="Name" Column="NAME" Type="Text"/>
+<BizField Name="PId" Column="PARENT_ID" Type="Text"/>
+</BizFieldList>
+   <TableJoins>
+   </TableJoins>
+   <ObjReferences>
+      <Object Name="BORegist" Description="Registrations of event" Relationship="1-M" Table="regist" Column="EVENT_ID" FieldRef="Id" CascadeDelete="Y"/>
+      <Object Name="BOAttendee" Description="Attendees of events" Relationship="M-M" Table="attendee" Column="SYSID" FieldRef="Id" CascadeDelete="Y" XTable="regist" XColumn1="EVENT_ID" XColumn2="ATTENDEE_ID" XDataObj="BORegist"/>
+      <!--<Object Name="BORegist" Description="Registrations of event" Relationship="1-M" Association="regist.EVENT_ID='[Id]'"/>
+      <Object Name="BOAttendee" Description="Attendees of events" Relationship="M-M" Association="regist.EVENT_ID='[Id]' AND attendee.SYSID=regist.ATTENDEE_ID"/>-->
+   </ObjReferences>
+</BizDataObj>

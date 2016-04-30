@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="no"?>
+<BizView Name="AttendeeView" Description="Attendee View" Package="demo" Class="BizView" Template="view.tpl" AccessControl="">
+   <ControlList>
+      <Control Name="_tabs" Form="Tabs"/>
+      <Control Name="fm_attd" Form="FMAttendee" SubCtrls="shared.FMAttachment"/>
+      <Control Name="fm_attach" Form="shared.FMAttachment" SubCtrls=""/>
+   </ControlList>
+</BizView>

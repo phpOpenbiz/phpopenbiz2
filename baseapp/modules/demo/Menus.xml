@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<Menu Name="Menus" Package="demo" Class="HTMLMenus">
+   <MenuItem URL="http://www.yahoo.com" Target="" Caption="Yahoo" Icon="yahoo.gif">
+      <MenuItem URL="http://mail.yahoo.com" Target="" Caption="Yahoo email" Icon="yahoo.gif"/>
+      <MenuItem URL="http://finance.yahoo.com" Target="" Caption="Yahoo finance ..." Icon="yahoo.gif">
+         <MenuItem URL="http://finance.yahoo.com/mt?u" Target="_blank" Caption="Today's market"/>
+         <MenuItem URL="http://biz.yahoo.com/top.html" Target="_blank" Caption="News"/>
+      </MenuItem>   
+   </MenuItem>
+   <MenuItem URL="" Target="" Caption="Wizard tests" Icon="wizard.gif">
+      <MenuItem URL="controller.php?view=demo.EventNewWizardView" Target="" Caption="Create an event" Icon="wizard.gif"/>
+      <MenuItem URL="controller.php?view=demo.EventWizardView&amp;param:Evt_Id=EVT_2" Target="" Caption="Edit an event (Id=EVT_2)"/>
+   </MenuItem>
+</Menu>

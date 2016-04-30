@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizDataObj Name="BOAudit" Description="" Package="shared" Class="BizDataObj" Table="audit" CacheMode="0">
+	<BizFieldList>
+	   <BizField Name="Id" Column="SYSID"/>
+      <BizField Name="DataObjName" Column="DATAOBJNAME"/>
+      <BizField Name="ObjectId" Column="OBJECTID"/>
+      <BizField Name="FieldName" Column="FIELDNAME"/>
+      <BizField Name="OldValue" Column="OLDVALUE"/>
+      <BizField Name="NewValue" Column="NEWVALUE"/>
+      <BizField Name="ChangeTime" Column="CHANGETIME" Type="Datetime" Format="%Y-%m-%d %H:%M:%S"/>
+      <BizField Name="ChangeBy" Column="CHANGEBY"/>
+   </BizFieldList>
+</BizDataObj>

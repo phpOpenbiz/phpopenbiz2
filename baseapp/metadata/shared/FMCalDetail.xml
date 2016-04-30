@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMCalDetail" Package="shared" Class="BizForm" jsClass="jbForm" Title="Calendar Event" SearchRule="" Description="" BizDataObj="BOCalDetail" PageSize="1">
+   <DisplayModes>
+      <Mode Name="EDIT" TemplateFile="caldetail.tpl" DataFormat="array" FormatStyle=""/>
+      <Mode Name="NEW" TemplateFile="caldetail.tpl" DataFormat="array" FormatStyle=""/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="evt_id" FieldName="Id" DisplayName="Event Id" Hidden="" Enabled="N"/>
+      <BizCtrl Name="evt_sub" FieldName="Subject" DisplayName="Subject" Width="300"/>
+      <BizCtrl Name="evt_type" FieldName="Type" DisplayName="Type" SelectFrom="Selection(EventType)"/>
+      <BizCtrl Name="evt_loc" FieldName="Location" DisplayName="Location" Width="300"/>
+      <BizCtrl Name="evt_note" FieldName="Notes" DisplayName="Notes" Type="Textarea" Height="50" Width="300"/>
+      <BizCtrl Name="evt_start" FieldName="Start" DisplayName="Start" Type="Datetime"/>
+      <BizCtrl Name="evt_end" FieldName="End" DisplayName="End" Type="Datetime"/>
+      <BizCtrl Name="evt_rp" FieldName="Repeated" DisplayName="Repeated" Type="CheckBox" SelectFrom="Y"/>
+      <BizCtrl Name="evt_rpcycle" FieldName="RepeatCycle" DisplayName="Repeat Cycle" SelectFrom="Selection(RepeatCycle)"/>
+      <BizCtrl Name="evt_rpend" FieldName="RepeatEnd" DisplayName="Repeat End" Type="Datetime"/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_save" Image="" Caption="Save" Type="Button" Function="SaveRecord()" PostAction="view:shared.CalendarView"/>
+      <Control Name="btn_cancel" Image="" Caption="Cancel" Type="Button" Function="Cancel()" PostAction="view:shared.CalendarView"/>
+      <Control Name="btn_del" Image="" Caption="Delete" Type="Button" Function="DeleteRecord()" PostAction="view:shared.CalendarView"/>
+   </Toolbar> 
+   <Navbar>
+   </Navbar> 
+</BizForm>

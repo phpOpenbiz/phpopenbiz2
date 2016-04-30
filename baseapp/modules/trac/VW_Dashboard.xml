@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizView Class="BizView" Description="Dashboard" Name="VW_Dashboard" Package="trac" Template="view_dashboard.tpl">
+   <ControlList>
+   <Control Form="trac.Tabs" Name="tab"/>
+</ControlList>
+</BizView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="no"?>
+<Tabs Name="Tabs" Package="trac" Class="HTMLTabs" TemplateFile="tabs.tpl">
+   <TabViews>
+      <View Name="Dashboard" URL="" View="trac.VW_Dashboard" Caption="Dashboard"/>
+      <View Name="Tickets" URL="" View="trac.VW_Ticket" Caption="Tickets" Icon=""/>
+      <View Name="Admin" URL="" View="trac.VW_Admin" Caption="Admin" Icon=""/>
+   </TabViews>
+</Tabs>

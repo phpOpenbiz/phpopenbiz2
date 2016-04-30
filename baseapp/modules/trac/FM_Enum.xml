@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizForm BizDataObj="trac.DO_Enum" Class="BizForm" Description="Add description of BizForm" InheritFrom="" Name="FM_Enum" Package="trac" PageSize="20" SearchRule="" Title="List of values - Ticket priority, severity, type, status" jsClass="jbForm">
+   <DisplayModes>
+      <Mode DataFormat="array" Name="QUERY" TemplateFile="edit_ticket.tpl"/>
+      <Mode DataFormat="array" Name="EDIT" TemplateFile="edit_ticket.tpl"/>
+      <Mode DataFormat="array" Name="NEW" TemplateFile="edit_ticket.tpl"/>
+      <Mode DataFormat="block" FormatStyle="tbl" Name="READ" TemplateFile="list_ticket_admin.tpl"/>
+   </DisplayModes>
+   <BizCtrlList>
+   <BizCtrl DisplayName="Id" FieldName="Id" Hidden="Y" Name="bctrl_Id"/>
+<BizCtrl DisplayName="Type" FieldName="type" Name="bctrl_type" SelectFrom="Priority|Severity|Type|Status|Resolution" Sortable="Y"/>
+<BizCtrl DisplayName="Name" FieldName="name" Name="bctrl_name"/>
+<BizCtrl DisplayName="Order" FieldName="value" Name="bctrl_value"/>
+</BizCtrlList>
+   <Toolbar>
+      <Control Caption="Search" DisplayMode="READ" Function="SearchRecord()" Image="search.gif" Name="btn_search" Type="Button"/>
+      <Control Caption="Search" DisplayMode="QUERY" Function="RunSearch()" Image="" Name="btn_dosearch" Type="button"/>
+      <Control Caption="Edit" DisplayMode="READ" Function="EditRecord()" Image="edit.gif" Name="btn_edit" Type="Button"/>
+      <Control Caption="New" DisplayMode="READ" Function="NewRecord()" Image="new.gif" Name="btn_new" Type="Button"/>
+      <Control Caption="Save" DisplayMode="EDIT|NEW" Function="SaveRecord()" Image="" Name="btn_save" Type="Button"/>
+      <Control Caption="Copy" DisplayMode="READ" Function="CopyRecord()" Image="copy.gif" Name="btn_copy" Style="" Type="button"/>
+      <Control Caption="Delete" DisplayMode="READ" Function="DeleteRecord()" Image="delete.gif" Name="btn_delete" Style="" Type="button"/>
+      <Control Caption="Cancel" DisplayMode="EDIT|NEW|QUERY" Function="Cancel()" Image="" Name="btn_cancel" Type="Button"/>
+      <Control Caption="Default Query" DisplayMode="READ" Function="RefreshQuery()" Image="refresh.gif" Name="btn_refresh" Style="" Type="button"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Caption="Next" DisplayMode="READ" Function="NextPage()" Image="next.gif" Name="btn_next" Type="Button"/>
+      <Control Caption="Previous" DisplayMode="READ" Function="PrevPage()" Image="prev.gif" Name="btn_prev" Type="Button"/>
+      <Control Caption="Last" DisplayMode="READ" Function="GotoPage(-1)" Image="nextlast.gif" Name="btn_last" Type="Button"/>
+      <Control Caption="First" DisplayMode="READ" Function="GotoPage(1)" Image="prevfirst.gif" Name="btn_first" Type="Button"/>
+   </Navbar> 
+</BizForm>

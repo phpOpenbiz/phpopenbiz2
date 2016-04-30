@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<Selection>
+   <EventType Value=""/>
+   <EventType Value="Meeting"/>
+   <EventType Value="Appointment"/>
+   <EventType Value="Birthday"/>
+   
+   <RepeatCycle Value=""/>
+   <RepeatCycle Value="Every day"/>
+   <RepeatCycle Value="Every week"/>
+   <RepeatCycle Value="Every month"/>
+   <RepeatCycle Value="Every year"/>
+</Selection>

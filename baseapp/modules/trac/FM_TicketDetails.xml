@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizForm BizDataObj="trac.DO_Ticket" Class="FM_TicketDetails" Description="Tickets" InheritFrom="" Name="FM_TicketDetails" Package="trac" PageSize="20" SearchRule="" Title="Tickets" jsClass="jbForm">
+   <DisplayModes>
+      <Mode DataFormat="array" Name="EDIT" TemplateFile="edit_ticket_details.tpl"/>
+      <Mode DataFormat="array" Name="NEW" TemplateFile="ticket_details.tpl"/>
+      <Mode DataFormat="array" Name="READ" TemplateFile="ticket_details.tpl"/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl DisplayName="Id" Enabled="N" FieldName="Id" Name="bctrl_Id"/>
+      <BizCtrl DisplayName="summary" FieldName="summary" HTMLAttr="required='1'" Height="" Name="bctrl_summary" Required="Y" Type="Text" Width="600"/>
+      <BizCtrl DisplayName="component" FieldName="component" Name="bctrl_component" SelectFrom="trac.DO_Component[Id]" Width="200"/>
+      <BizCtrl DisplayName="version" FieldName="version" Name="bctrl_version" SelectFrom="trac.DO_Version[Id]" Width="200"/>
+      <BizCtrl DisplayName="milestone" FieldName="milestone" Name="bctrl_milestone" SelectFrom="trac.DO_Milestone[Id]" Width="200"/>
+      <BizCtrl DisplayName="type" FieldName="type" Name="bctrl_type" SelectFrom="trac.DO_Enum[name], [type]='Type'" Width="200"/>
+      <BizCtrl DisplayName="serverity" FieldName="serverity" Name="bctrl_serverity" SelectFrom="trac.DO_Enum[name], [type]='Severity'" Width="200"/>
+      <BizCtrl DisplayName="owner" FieldName="owner" Name="bctrl_owner" Width="200"/>
+      <BizCtrl DisplayName="time" FieldName="time" Name="bctrl_time"/>
+      <BizCtrl DisplayName="changetime" FieldName="changetime" Name="bctrl_changetime"/>
+      <BizCtrl DisplayName="priority" FieldName="priority" Name="bctrl_priority" SelectFrom="trac.DO_Enum[name], [type]='Priority'" Width="200"/>
+      <BizCtrl DisplayName="reporter" FieldName="reporter" Name="bctrl_reporter"/>
+      <BizCtrl DisplayName="cc" FieldName="cc" HTMLAttr="" Height="" Name="bctrl_cc" Type="" Width="300"/>
+      <BizCtrl DisplayName="status" FieldName="status" Name="bctrl_status" SelectFrom="trac.DO_Enum[name], [type]='Status'" Width="200">
+         <EventHandler Name="onchange" Event="onchange" Function="UpdateForm()" FunctionType="" />
+      </BizCtrl>
+      <BizCtrl DisplayName="resolution" FieldName="resolution" Name="bctrl_resolution" SelectFrom="trac.DO_Enum[name], [type]='Resolution'" Width="200" Enabled="{(@:Control[bctrl_status].Value == 'Resolved' || @:Control[bctrl_status].Value == 'Closed')?'Y':'N'}"/>
+      <BizCtrl DisplayName="description" FieldName="description" HTMLAttr="ROWS=8" Height="" Name="bctrl_description" Ttype="Textarea" Type="Textarea" Width="600"/>
+      <BizCtrl DisplayName="keywords" FieldName="keywords" Name="bctrl_keywords" Width="200"/>
+<BizCtrl DisplayName="Your name or email:" HTMLAttr="required='1'" Name="editor_name" Required="Y" Width="200"/>
+<BizCtrl HTMLAttr="ROWS=8" Name="editor_comment" Type="Textarea" Width="600"/>
+   </BizCtrlList>
+   <Toolbar>
+      <!--<Control Caption="New" DisplayMode="READ" Function="NewRecord()" Name="btn_new" Type="Button"/>-->
+      <Control Caption="Edit" DisplayMode="READ" Function="EditRecord()" Name="btn_edit" Type="Button"/>
+      <Control Caption="Save" DisplayMode="EDIT|NEW" Function="SaveRecord()" Image="" Name="btn_save" Type="Button"/>
+      <Control Caption="Copy" DisplayMode="READ" Function="CopyRecord()" Name="btn_copy" Style="" Type="button"/>
+      <Control Caption="Delete" DisplayMode="READ" Function="DeleteRecord()" Name="btn_delete" Style="" Type="button" PostAction="view:trac.VW_Ticket"/>
+      <Control Caption="Cancel" DisplayMode="EDIT|QUERY" Function="Cancel()" Image="" Name="btn_cancel" Type="Button"/>
+      <Control Caption="Cancel" DisplayMode="NEW" Function="Cancel()" Image="" Name="btn_cancel_new" Type="Button" PostAction="view:trac.VW_Ticket"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Caption="Next" DisplayMode="READ" Function="NextPage()" Image="next.gif" Name="btn_next" Type="Button"/>
+      <Control Caption="Previous" DisplayMode="READ" Function="PrevPage()" Image="prev.gif" Name="btn_prev" Type="Button"/>
+      <Control Caption="Last" DisplayMode="READ" Function="GotoPage(-1)" Image="nextlast.gif" Name="btn_last" Type="Button"/>
+      <Control Caption="First" DisplayMode="READ" Function="GotoPage(1)" Image="prevfirst.gif" Name="btn_first" Type="Button"/>
+   </Navbar> 
+</BizForm>

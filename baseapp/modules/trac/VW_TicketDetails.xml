@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizView Class="BizView" Description="Tickets" Name="VW_TicketDetails" Package="trac" Tab="Tickets" Template="view_ticket_details.tpl">
+   <ControlList>
+   <Control Form="trac.Tabs" Name="tab"/>
+<Control Form="trac.FM_TicketDetails" Name="ticket_fm" SubCtrls="trac.FM_TicketChange;trac.FM_Attachment"/>
+<Control Form="trac.FM_Attachment" Name="attach_fm"/>
+<Control Form="trac.FM_TicketChange" Name="change_fm"/>
+</ControlList>
+</BizView>

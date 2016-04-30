@@ -68,8 +68,7 @@ class reportService extends MetaObject
       }
       fputcsv($fp, $fieldNames);
       
-      $recList = array();
-      $bizobj->FetchRecords("", $recList);
+      $recList = $bizobj->DirectFetch();
       foreach ($recList as $recArray)
       {
          unset($fieldValues);

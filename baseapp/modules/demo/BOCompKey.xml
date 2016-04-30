@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizDataObj Name="BOCompKey" Description="" Package="demo" Class="BizDataObj" InheritFrom="" DBName="" Table="compkey" SearchRule="" SortRule="" OtherSQLRule="" CacheMode="1" IdGeneration="None">
+	<BizFieldList>
+   	<BizField Name="LName" Column="LASTNAME"/>
+   	<BizField Name="FName" Column="FIRSTNAME"/>
+      <BizField Name="Age" Column="AGE"/>
+      <BizField Name="Id" Column="LASTNAME,FIRSTNAME"/>
+   </BizFieldList>
+</BizDataObj>

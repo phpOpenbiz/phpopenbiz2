@@ -166,13 +166,14 @@ interface iUIControl
 
 class BDOException extends Exception {}
 class BFMException extends Exception {}
-class BSVException extends Exception {}
+class BSVCException extends Exception {}
 
 /*
    global variables
 */
 include_once("BizSystem.php");
-$g_BizSystem = new BizSystem();
+//$g_BizSystem = new BizSystem();
+$g_BizSystem = BizSystem::instance();
 
 /**
  * __auload - search for the php file required to load the class
@@ -197,6 +198,7 @@ function microtime_float()
 error_reporting(E_ALL ^ (E_NOTICE | E_STRICT));
 // if use user defined error handling function, all errors are reported to the function
 set_error_handler("userErrorHandler");
+set_exception_handler('userExceptionHandler');
 
 /**
  * userErrorHandler - user error handler function
@@ -205,7 +207,13 @@ set_error_handler("userErrorHandler");
  */
 function userErrorHandler ($errno, $errmsg, $filename, $linenum, $vars) 
 {
-   BizSystem::ErrorHandler($errno, $errmsg, $filename, $linenum, $vars);
+   include_once(OPENBIZ_BIN.'ErrorHandler.php');
+   OB_ErrorHandler::ErrorHandler($errno, $errmsg, $filename, $linenum, $vars);
 }
 
+function userExceptionHandler ($exc) 
+{
+   include_once(OPENBIZ_BIN.'ErrorHandler.php');
+   OB_ErrorHandler::ExceptionHandler($exc);
+}
 ?>

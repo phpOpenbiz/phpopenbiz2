@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizForm Name="FMEventTree" Description="Add description of BizForm" Package="demo" Class="BizFormTree" InheritFrom="" jsClass="jbForm" Title="Events" SearchRule="" BizDataObj="demo.BOEventTree" PageSize="5">
+   <DisplayModes>
+      <Mode Name="QUERY" TemplateFile="edit.tpl" DataFormat="array"/>
+      <Mode Name="EDIT" TemplateFile="edit.tpl" DataFormat="array"/>
+      <Mode Name="NEW" TemplateFile="edit.tpl" DataFormat="array"/>
+      <Mode Name="READ" TemplateFile="list_tree.tpl" DataFormat="block" FormatStyle="tbl"/>
+   </DisplayModes>
+   <BizCtrlList>
+   <BizCtrl Name="bctrl_Id" FieldName="Id" DisplayName="Id"/>
+<BizCtrl Name="bctrl_name" FieldName="Name" DisplayName="Name" Link="javascript:CallFunction('{@:Name}.ListChildren({@:Control[bctrl_Id].Value})')"/>
+<BizCtrl Name="bctrl_pid" FieldName="PId" DisplayName="PId"/>
+</BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_search" Image="search.gif" Caption="Search" Type="Button" Function="SearchRecord()" DisplayMode="READ"/>
+      <Control Name="btn_dosearch" Image="" Caption="Search" Type="button" Function="RunSearch()" DisplayMode="QUERY"/>
+      <Control Name="btn_edit" Image="edit.gif" Caption="Edit" Type="Button" Function="EditRecord()" DisplayMode="READ"/>
+      <Control Name="btn_new" Image="new.gif" Caption="New" Type="Button" Function="NewRecord()" DisplayMode="READ"/>
+      <Control Name="btn_save" Image="" Caption="Save" Type="Button" Function="SaveRecord()" DisplayMode="EDIT|NEW"/>
+      <Control Name="btn_copy" Image="copy.gif" Caption="Copy" Type="button" Style="" Function="CopyRecord()" DisplayMode="READ"/>
+      <Control Name="btn_delete" Image="delete.gif" Caption="Delete" Type="button" Style="" Function="DeleteRecord()" DisplayMode="READ"/>
+      <Control Name="btn_cancel" Image="" Caption="Cancel" Type="Button" Function="Cancel()" DisplayMode="EDIT|NEW|QUERY"/>
+      <Control Name="btn_refresh" Image="refresh.gif" Caption="Default Query" Type="button" Function="RefreshQuery()" Style="" DisplayMode="READ"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" Function="NextPage()" DisplayMode="READ"/>
+      <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" Function="PrevPage()" DisplayMode="READ"/>
+      <Control Name="btn_last" Image="nextlast.gif" Caption="Last" Type="Button" Function="GotoPage(-1)" DisplayMode="READ"/>
+      <Control Name="btn_first" Image="prevfirst.gif" Caption="First" Type="Button" Function="GotoPage(1)" DisplayMode="READ"/>
+   </Navbar> 
+</BizForm>

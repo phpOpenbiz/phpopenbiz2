@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizDataObj Class="BizDataObj" DBName="Trac" Description="Add description of BizDataObj" IdGeneration="Identity" InheritFrom="" Name="DO_TicketChange" OtherSQLRule="" Package="trac" SearchRule="" SortRule="[time] DESC" Table="ticket_change">
+	<BizFieldList>
+   <BizField Column="id" Name="Id"/>
+<BizField Column="ticket" Name="ticket" Type="Text"/>
+<BizField Column="time" Name="time" Type="Datetime"/>
+<BizField Column="author" Name="author" Type="Text"/>
+<BizField Column="field" Name="field" Type="Text"/>
+<BizField Column="oldvalue" Name="oldvalue" Type="Text"/>
+<BizField Column="newvalue" Name="newvalue" Type="Text"/>
+</BizFieldList>
+   <TableJoins>
+   </TableJoins>
+   <ObjReferences>
+   </ObjReferences>
+</BizDataObj>

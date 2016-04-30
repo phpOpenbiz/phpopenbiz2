@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizView Class="BizView" Description="Tickets" Name="VW_Ticket" ViewSet="TicketViewSet" Package="trac" Template="view_ticket.tpl">
+   <ControlList>
+   <Control Form="trac.Tabs" Name="tab"/>
+   <Control Form="trac.FM_Ticket_Search" Name="ticket_fm_search"/>
+   <Control Form="trac.FM_Ticket" Name="ticket_fm"/>
+</ControlList>
+</BizView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizDataObj Class="BizDataObj_Lite" DBName="Trac" Description="Add description of BizDataObj" InheritFrom="" Name="DO_Ticket" OtherSQLRule="" Package="trac" SearchRule="" SortRule="" Table="ticket">
+	<BizFieldList>
+      <BizField Column="id" Name="Id"/>
+      <BizField Column="type" Name="type" Type="Text"/>
+      <BizField Column="time" Name="time" Type="Datetime" ValueOnCreate="{date('Y-m-d H:i:s')}" Format="%m/%d/%Y"/>
+      <BizField Column="changetime" Name="changetime" Type="Datetime" ValueOnCreate="{date('Y-m-d H:i:s')}" ValueOnUpdate="{date('Y-m-d H:i:s')}"/>
+      <BizField Column="component" Name="component" Type="Text"/>
+      <BizField Column="serverity" Name="serverity" Type="Text"/>
+      <BizField Column="priority" Name="priority" Type="Text"/>
+      <BizField Column="owner" Name="owner" Type="Text"/>
+      <BizField Column="reporter" Name="reporter" Type="Text"/>
+      <BizField Column="cc" Name="cc" Type="Text"/>
+      <BizField Column="version" Name="version" Type="Text"/>
+      <BizField Column="milestone" Name="milestone" Type="Text"/>
+      <BizField Column="status" Name="status" Type="Text"/>
+      <BizField Column="resolution" Name="resolution" Type="Text"/>
+      <BizField Column="summary" Name="summary" Type="Text"/>
+      <BizField Column="description" Name="description" Type="Text"/>
+      <BizField Column="keywords" Name="keywords" Type="Text"/>
+   </BizFieldList>
+   <TableJoins>
+   </TableJoins>
+   <ObjReferences>
+   <Object Column="parent_id" FieldRef="Id" Name="trac.DO_Attachment" Relationship="1-M" Table="attachment"/>
+<Object Column="ticket" FieldRef="Id" Name="trac.DO_TicketChange" Relationship="1-M" Table="ticket_change"/>
+</ObjReferences>
+</BizDataObj>

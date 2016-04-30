@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizDataObj Name="BOAttendee" Description="Attendee BizDataObj" Package="demo" Class="BizDataObj" DBName="" Table="attendee" SearchRule="" SortRule="" GroupBy="" Having="">
+	<BizFieldList>
+	<BizField Name="UpOrgId" Column="UPORG_ID"/>
+	<BizField Name="Type" Column="TYPE"/>
+	<BizField Name="Description" Column="DESCRIPTION"/>
+	<BizField Name="Address" Column="ADDRESS"/>
+	<BizField Name="Email" Column="EMAIL" Validator="{@validate:email([Email])}"/>
+	<BizField Name="Phone" Column="PHONE"/>
+	<BizField Name="OtherName" Column="OTHERNAME"/>
+	<!--<BizField Name="FullName" Column="" Value="{@:Field[LastName].Value}, {[FirstName]}"/>-->
+	<BizField Name="LastName" Column="LASTNAME" Validator="{@validate:longerThan([LastName], 2)}"/>
+	<BizField Name="FirstName" Column="FIRSTNAME" Validator="{@validate:longerThan([FirstName], 2)}"/>
+	<BizField Name="Id" Column="SYSID"/>
+	</BizFieldList>
+	<ObjReferences>
+     <Object Name="shared.BOAttachment" Relationship="1-M" Table="attach" Column="PARENT_ID" FieldRef="Id" CascadeDelete="Y"/>
+   </ObjReferences>
+<TableJoins>
+</TableJoins>
+<Parameters/>
+</BizDataObj>

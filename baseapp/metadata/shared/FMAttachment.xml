@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMAttachment" Package="shared" Class="FMAttachment" jsClass="jbForm" Title="Attachment" SearchRule="" Description="" BizDataObj="BOAttachment" PageSize="5">
+   <DisplayModes>
+      <Mode Name="QUERY" TemplateFile="edit_file.tpl" InitMode="" DataFormat="array" FormatStyle=""/>
+      <Mode Name="EDIT" TemplateFile="edit_file.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="NEW" TemplateFile="edit_file.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="READ" TemplateFile="list.tpl" InitMode="" DataFormat="block" FormatStyle="tbl"/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl Name="attach_id" FieldName="Id" DisplayName="File Id" Enabled="Y"/>
+      <BizCtrl Name="attach_pid" FieldName="ParentId" DisplayName="Parent Id" Enabled="Y"/>
+      <!--<BizCtrl Name="attach_name" FieldName="Name" DisplayName="File Name" Link="controller.php?F=Invoke&amp;P0=[service.attachService]&amp;P1=[Download]&amp;P2=[{[Id]}]" DisplayMode="READ"/>-->
+      <BizCtrl Name="attach_name" FieldName="Name" DisplayName="File Name" Function="shared.FMAttachment.Download({@:Control[attach_id].Value})" FunctionType="Page" DisplayMode="READ"/>
+      <BizCtrl Name="attach_size" FieldName="Size" DisplayName="File Size" DisplayMode="READ"/>
+      <BizCtrl Name="attach_type" FieldName="Type" DisplayName="Type" Type="Text" DisplayMode="READ"/>
+      <BizCtrl Name="attach_data" FieldName="Data" DisplayName="File" Type="File" DisplayMode="EDIT|NEW"/>
+      <BizCtrl Name="prt_name" FieldName="parent_name" DisplayName="Parent Name" Enabled="Y"/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_search" Image="search.gif" Caption="Search" Type="Button" Function="SearchRecord()" DisplayMode="READ"/>
+      <Control Name="btn_dosearch" Image="" Caption="Search" Type="button" Function="RunSearch()" DisplayMode="QUERY"/>
+      <Control Name="btn_edit" Image="edit.gif" Caption="Edit" Type="Button" Function="EditRecord()" DisplayMode="READ"/>
+      <Control Name="btn_new" Image="new.gif" Caption="New" Type="Button" Function="NewRecord()" DisplayMode="READ"/>
+      <Control Name="btn_save" Image="" Caption="Save" Type="Button" Function="SaveRecord()" FunctionType="Form" DisplayMode="EDIT|NEW"/>
+      <Control Name="btn_delete" Image="delete.gif" Caption="Delete" Type="button" Function="DeleteRecord()" DisplayMode="READ"/>
+      <Control Name="btn_cancel" Image="" Caption="Cancel" Type="Button" Function="Cancel()" FunctionType="Form" DisplayMode="EDIT|NEW|QUERY"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" Width="" Height="" HTMLAttr="" Function="NextPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+      <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" Width="" Height="" HTMLAttr="" Function="PrevPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+   </Navbar> 
+</BizForm>

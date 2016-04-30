@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<BizView Name="CalendarView" Description="Calendar" Package="shared" Class="BizView" Template="view_cal.tpl" AccessControl="">
+   <ControlList>
+      <Control Name="fm_cal" Form="FMCalendar"/>
+   </ControlList>
+</BizView>

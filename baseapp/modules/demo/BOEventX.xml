@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+
+<BizDataObj Name="BOEventX" Description="Event BizDataObj Extended from BOEvent" Package="demo" Class="BizDataObj" InheritFrom="demo.BOEvent" Table="" SearchRule="" SortRule="">
+   <BizFieldList>
+   </BizFieldList>
+</BizDataObj>

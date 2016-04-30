@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizForm BizDataObj="trac.DO_Attachment" Class="FM_Attachment" Description="Add description of BizForm" FullPage="N" InheritFrom="" Name="FM_Attachment" Package="trac" PageSize="" SearchRule="" Title="Attachements" jsClass="jbForm">
+   <DisplayModes>
+      
+      <Mode DataFormat="array" Name="EDIT" TemplateFile="edit_ticket_upload.tpl"/>
+      <Mode DataFormat="array" Name="NEW" TemplateFile="edit_ticket_upload.tpl"/>
+      <Mode DataFormat="table" FormatStyle="tbl_ticket" Name="READ" TemplateFile="list_ticket_attach.tpl"/>
+      <!--<Mode DataFormat="block" FormatStyle="tbl_ticket" Name="READ" TemplateFile="list_ticket.tpl"/>-->
+   </DisplayModes>
+   <BizCtrlList>
+<BizCtrl DisplayName="author" FieldName="author" HTMLAttr="required='1'" Name="bctrl_author" Required="Y"/>
+<BizCtrl DisplayName="description" FieldName="description" Name="bctrl_description" Width="500"/>
+<BizCtrl DisplayName="Id" FieldName="Id" Hidden="Y" Name="bctrl_Id"/>
+<BizCtrl DisplayName="parent_id" FieldName="parent_id" Hidden="" Name="bctrl_parent_id" Type="Hidden"/>
+<BizCtrl DisplayName="filename" FieldName="filename" HTMLAttr="required='1' size=50" Function="trac.FM_Attachment.Download({@:Control[bctrl_Id].Value})" FunctionType="Page" Name="bctrl_filename" Required="Y" Type="File"/>
+<BizCtrl DisplayMode="READ" DisplayName="type" FieldName="type" Name="bctrl_type"/>
+<BizCtrl DisplayMode="READ" DisplayName="size" FieldName="size" Name="bctrl_size"/>
+<BizCtrl DisplayMode="READ" DisplayName="time" FieldName="time" Name="bctrl_time"/>
+<BizCtrl DisplayName="ipnr" FieldName="ipnr" Hidden="Y" Name="bctrl_ipnr"/>
+<BizCtrl DisplayName="Replace the file with same name" FieldName="" Name="bctrl_replace" Type="Checkbox" SelectFrom="Y"/>
+</BizCtrlList>
+   <Toolbar>
+      <Control Caption="Attach a new file" DisplayMode="READ" Function="NewRecord()" name="btn_new" Type="Button"/>
+      <Control Caption="Save" DisplayMode="EDIT|NEW" Function="SaveRecord()" Image="" Name="btn_save" Type="Button"/>
+      <Control Caption="Cancel" DisplayMode="EDIT|NEW|QUERY" Function="Cancel()" Image="" Name="btn_cancel" Type="Button"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Caption="Next" DisplayMode="READ" Function="NextPage()" Image="next.gif" Name="btn_next" Type="Button"/>
+      <Control Caption="Previous" DisplayMode="READ" Function="PrevPage()" Image="prev.gif" Name="btn_prev" Type="Button"/>
+      <Control Caption="Last" DisplayMode="READ" Function="GotoPage(-1)" Image="nextlast.gif" Name="btn_last" Type="Button"/>
+      <Control Caption="First" DisplayMode="READ" Function="GotoPage(1)" Image="prevfirst.gif" Name="btn_first" Type="Button"/>
+   </Navbar> 
+</BizForm>

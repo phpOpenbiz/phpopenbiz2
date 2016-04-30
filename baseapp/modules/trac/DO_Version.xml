@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizDataObj Class="BizDataObj" DBName="Trac" Description="Add description of BizDataObj" IdGeneration="None" InheritFrom="" Name="DO_Version" OtherSQLRule="" Package="trac" SearchRule="" SortRule="" Table="version">
+	<BizFieldList>
+   <BizField Column="name" Name="Id"/>
+<BizField Column="time" Name="time" Type="Datetime"/>
+<BizField Column="description" Name="description" Type="Text"/>
+</BizFieldList>
+   <TableJoins>
+   </TableJoins>
+   <ObjReferences>
+   </ObjReferences>
+</BizDataObj>

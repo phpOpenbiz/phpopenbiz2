@@ -87,7 +87,7 @@ class emailService extends MetaObject
       {
          $this->m_ErrorMsg = "Mailer Error: " . $mail->ErrorInfo;
          return false;
-         //throw new BSVException("Mailer Error: " . $mail->ErrorInfo);
+         //throw new BSVCException("Mailer Error: " . $mail->ErrorInfo);
          //echo "Message was not sent <p>";
          //echo "Mailer Error: " . $mail->ErrorInfo;
          //exit;

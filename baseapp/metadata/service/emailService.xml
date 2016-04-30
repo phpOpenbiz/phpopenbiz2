@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<PluginService Name="emailService" Package="service" Class="emailService">
+   <Accounts>
+     <Account Name="MyPhpopenbiz" Host="" FromName="" FromEmail="" IsSMTP="Y" SMTPAuth="Y" Username="" Password="" />
+   </Accounts>
+</PluginService>

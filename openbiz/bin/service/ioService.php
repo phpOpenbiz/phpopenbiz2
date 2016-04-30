@@ -26,7 +26,7 @@ class ioService
       $bizobj = $bizform->GetDataObj();
       
       $recList = array();
-      $bizobj->FetchRecords("", $recList);
+      $bizobj->FetchRecords("", $recList, -1, -1, false);
       
       $s_xml = "<?xml version='1.0' standalone='yes'?>\n";
       $s_xml .= "<BizDataObj Name=\"".$bizobj->m_Name."\">\n";

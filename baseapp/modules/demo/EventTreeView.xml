@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BizView Name="EventTreeView" Description="Add description of BizView" Package="demo" Class="BizView" Template="notab_view.tpl">
+   <ControlList>
+   <Control Name="fm_eventtree" Form="demo.FMEventTree" SubCtrls="FMAttendeeChild"/>
+   <Control Name="fm_attd" Form="FMAttendeeChild"/>
+</ControlList>
+</BizView>

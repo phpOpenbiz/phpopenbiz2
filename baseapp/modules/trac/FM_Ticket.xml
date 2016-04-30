@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BizForm BizDataObj="trac.DO_Ticket" Class="BizForm_Lite" Description="Tickets" FullPage="N" InheritFrom="" Name="FM_Ticket" Package="trac" PageSize="3" SearchRule="" Title="Tickets List" jsClass="jbForm">
+   <DisplayModes>
+      <Mode DataFormat="array" Name="QUERY" TemplateFile="edit_ticket.tpl"/>
+      <Mode DataFormat="table" FormatStyle="tbl_ticket" Name="READ" TemplateFile="list_ticket.tpl"/>
+   </DisplayModes>
+   <BizCtrlList>
+      <BizCtrl DisplayName="Id" DrillDownLink="VW_TicketDetails,FM_TicketDetails.bctrl_Id=bctrl_Id" FieldName="Id" Name="bctrl_Id"/>
+      <BizCtrl DisplayName="summary" FieldName="summary" HTMLAttr="required='1'" Height="" Name="bctrl_summary" Required="Y" Type="Text" Width="600" Sortable="Y"/>
+      <BizCtrl DisplayName="component" FieldName="component" Name="bctrl_component" SelectFrom="trac.DO_Component[Id]" Width="200"/>
+      <BizCtrl DisplayName="version" FieldName="version" Name="bctrl_version" SelectFrom="trac.DO_Version[Id]" Width="200"/>
+      <BizCtrl DisplayName="milestone" FieldName="milestone" Name="bctrl_milestone" SelectFrom="trac.DO_Milestone[Id]" Width="200"/>
+      <BizCtrl DisplayName="type" FieldName="type" Name="bctrl_type" SelectFrom="trac.DO_Enum[name], [type]='Type'" Width="200"/>
+      <BizCtrl DisplayName="serverity" FieldName="serverity" Name="bctrl_serverity" SelectFrom="trac.DO_Enum[name], [type]='Severity'" Width="200"/>
+      <BizCtrl DisplayName="owner" FieldName="owner" Name="bctrl_owner" Width="200" DisplayMode="QUERY"/>
+      <BizCtrl DisplayName="time" FieldName="time" Name="bctrl_time" type="Date"/>
+      <BizCtrl DisplayName="changetime" FieldName="changetime" Name="bctrl_changetime" Hidden="Y"/>
+      <BizCtrl DisplayName="priority" FieldName="priority" Name="bctrl_priority" SelectFrom="trac.DO_Enum[name], [type]='Priority'" Width="200"/>
+      <BizCtrl DisplayName="reporter" FieldName="reporter" Name="bctrl_reporter" DisplayMode="QUERY"/>
+      <BizCtrl DisplayName="cc" FieldName="cc" HTMLAttr="" Height="" Hidden="Y" Name="bctrl_cc" Type="" Width="300"/>
+      <BizCtrl DisplayName="status" FieldName="status" Name="bctrl_status" SelectFrom="trac.DO_Enum[name], [type]='Status'" Width="200"/>
+      <BizCtrl DisplayName="resolution" FieldName="resolution" Name="bctrl_resolution" SelectFrom="trac.DO_Enum[name], [type]='Resolution'" DisplayMode="QUERY" Width="200"/>
+      <BizCtrl DisplayName="description" FieldName="description" Name="bctrl_description" DisplayMode="QUERY" Width="600"/>
+      <BizCtrl DisplayName="keywords" FieldName="keywords" Name="bctrl_keywords" DisplayMode="QUERY" Width="200"/>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Caption="Create a ticket" DisplayMode="READ" Function="js:GoToView('trac.VW_TicketDetails',null,null,'trac.FM_TicketDetails','NEW')" Image="" Name="btn_new" Type="Button"/>
+      <Control Caption="Refresh data" DisplayMode="READ" Function="RefreshQuery()" Image="" Name="btn_refresh" Style="" Type="button"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Caption="Next" DisplayMode="READ" Function="NextPage()" Image="next.gif" Name="btn_next" Type="Button"/>
+      <Control Caption="Previous" DisplayMode="READ" Function="PrevPage()" Image="prev.gif" Name="btn_prev" Type="Button"/>
+      <Control Caption="Last" DisplayMode="READ" Function="GotoPage(-1)" Image="nextlast.gif" Name="btn_last" Type="Button"/>
+      <Control Caption="First" DisplayMode="READ" Function="GotoPage(1)" Image="prevfirst.gif" Name="btn_first" Type="Button"/>
+   </Navbar> 
+</BizForm>

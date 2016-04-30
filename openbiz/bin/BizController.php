@@ -220,7 +220,7 @@ class BizController
                // check if the object is a BizForm, and not target to other window
                if ($obj instanceof BizForm && $target!="other") {
                   //$obj->GetViewObject()->ReRender();
-                  $obj->GetViewObject()->ReRender();
+                  $obj->GetViewObject()->Render();
                }
                else
                   return $rt_val;
@@ -229,7 +229,13 @@ class BizController
          elseif ($func == "RPCInvoke")  // RPC invoke
          {
             if ($g_BizSystem->GetClientProxy()->HasOutput())
+            {
+               if ($_REQUEST['jsrs']==1)
+                  echo "<html><body><form name=\"jsrs_Form\"><textarea name=\"jsrs_Payload\" id=\"jsrs_Payload\">";
                $g_BizSystem->GetClientProxy()->PrintOutput();
+               if ($_REQUEST['jsrs']==1)
+                  echo "</textarea></form></body></html>";
+            }
             else
                return $rt_val;
          }

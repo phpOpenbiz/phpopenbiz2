@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="111"
+   name=""
+   committed-date="2007-08-06T16:47:02.802360Z"
+   url="https://bigchef.svn.sourceforge.net/svnroot/bigchef/branches/2.3/openbiz/languages/fr/LC_MESSAGES"
+   last-author="loicdevaux"
+   kind="dir"
+   uuid="5af468e4-f410-0410-a5a2-de31628d2c54"
+   repos="https://bigchef.svn.sourceforge.net/svnroot/bigchef"
+   revision="230"/>
+</wc-entries>

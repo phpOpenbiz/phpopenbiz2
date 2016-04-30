@@ -32,6 +32,7 @@ class excelService
    {
       header("Content-Type: application/vnd.ms-excel");
       header("Expires: 0");
+      header("Content-disposition:  attachment; filename=".date('Y-m-d_H:i:s').".xls");
       header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 
       global $g_BizSystem;
@@ -108,7 +109,7 @@ class excelService
       echo trim($line)."\n";
 
       $recList = array();
-      $bizobj->FetchRecords("", $recList);
+      $bizobj->FetchRecords("", $recList, -1, -1, false);
       foreach ($recList as $recArray)
       {
          $line = "";
@@ -156,7 +157,7 @@ class excelService
       echo trim($line)."\n";
 
       $recList = array();
-      $bizobj->FetchRecords("", $recList);
+      $bizobj->FetchRecords("", $recList, -1, -1, false);
       foreach ($recList as $recArray)
       {
          $line = "";

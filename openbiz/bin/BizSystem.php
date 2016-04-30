@@ -30,15 +30,24 @@ class BizSystem
    private $m_DBConnection = array();
    private $m_ServiceList = array();
    private $m_UserProfile = null;
+   
+   private static $m_Instance = null;
 
+   public static function instance()
+   {
+      if (self::$m_Instance == null)
+         self::$m_Instance = new BizSystem();
+      return self::$m_Instance;
+   }
+   
    /**
     * BizSystem::__construct() - initialize SessionContext and retieve object session variables
     *
     * @return void
     */
-   public function __construct()
+   private function __construct()
    {
-      BizSystem::LoadCoreLib("SessionContext");
+      include_once(OPENBIZ_BIN."SessionContext.php");
       $this->m_SessionContext = new SessionContext();
       // retrieve object session vars
       $this->m_SessionContext->RetrieveSessionObjects();
@@ -64,10 +73,15 @@ class BizSystem
    public function GetObjectFactory()
    {
       if (!$this->m_ObjectFactory) {
-         BizSystem::LoadCoreLib("ObjectFactory");
+         include_once(OPENBIZ_BIN."ObjectFactory.php");
          $this->m_ObjectFactory = new ObjectFactory();
       }
       return $this->m_ObjectFactory;
+   }
+   
+   public static function ObjectFactory()
+   {
+      return BizSystem::instance()->GetObjectFactory();
    }
 
    /**
@@ -79,6 +93,11 @@ class BizSystem
    {
       return $this->m_SessionContext;
    }
+   
+   public static function SessionContext()
+   {
+      return BizSystem::instance()->GetSessionContext();
+   }
 
    /**
     * BizSystem::GetConfiguration() - get the Configuration object
@@ -88,10 +107,15 @@ class BizSystem
    public function GetConfiguration()
    {
       if (!$this->m_Confgiuration) {
-         BizSystem::LoadCoreLib("Configuration");
+         include_once(OPENBIZ_BIN."Configuration.php");
          $this->m_Confgiuration = new Configuration();
       }
       return $this->m_Confgiuration;
+   }
+   
+   public static function Configuration()
+   {
+      return BizSystem::instance()->GetConfiguration();
    }
 
    /**
@@ -102,10 +126,15 @@ class BizSystem
    public function GetClientProxy()
    {
       if (!$this->m_ClientProxy) {
-         BizSystem::LoadCoreLib("ClientProxy");
+         include_once(OPENBIZ_BIN."ClientProxy.php");
          $this->m_ClientProxy = new ClientProxy();
       }
       return $this->m_ClientProxy;
+   }
+   
+   public static function ClientProxy()
+   {
+      return BizSystem::instance()->GetClientProxy();
    }
 
    /**
@@ -116,10 +145,15 @@ class BizSystem
    public function GetTypeManager()
    {
       if (!$this->m_TypeManager) {
-         BizSystem::LoadCoreLib("TypeManager");
+         include_once(OPENBIZ_BIN."TypeManager.php");
          $this->m_TypeManager = new TypeManager();
       }
       return $this->m_TypeManager;
+   }
+   
+   public static function TypeManager()
+   {
+      return BizSystem::instance()->GetTypeManager();
    }
 
    public function GetService($service)
@@ -198,7 +232,7 @@ class BizSystem
     * BizSystem::GetDBConnection() - get the database connection object
     *
     * @param string $dbname, database name declared in config.xml
-    * @return NewADOConnection
+    * @return Zend_DB_Adaptor
     */
    public function GetDBConnection($dbname=null)
    {
@@ -285,6 +319,7 @@ class BizSystem
     * BizSystem::GetXmlFileWithPath()
     * Search the object metedata file as objname+.xml in metedata directories
     * name convension: demo.BOEvent points to metadata/demo/BOEvent.xml
+    * new in 2.2.3, demo.BOEvent can point to modules/demo/BOEvent.xml
     *
     * @param string $xmlobj
     * @return string xml config file path
@@ -298,10 +333,15 @@ class BizSystem
       // replace "." with "/"
       $xmlfile = str_replace (".", "/", $xmlfile);
       $xmlfile .= ".xml";
+      
+      //if (file_exists($xmlfile))
+      //   return $xmlfile;
 
-      if (file_exists($xmlfile))
-         return $xmlfile;
       $xmlfile = "/".$xmlfile;
+      // search in modules directory first
+      if (file_exists(MODULE_PATH.$xmlfile))
+         return MODULE_PATH.$xmlfile;
+      
       if (file_exists(META_PATH.$xmlfile))
          return META_PATH.$xmlfile;
       if (file_exists(OPENBIZ_META.$xmlfile))
@@ -309,19 +349,34 @@ class BizSystem
 
       return null;
    }
+   
+   /**
+    * BizSystem::GetTplFileWithPath()
+    * Get openbiz template file path by searching modules/package, /templates
+    *
+    * @param string $className
+    * @return string php library file path
+    **/
+   public static function GetTplFileWithPath($templateFile, $packageName)
+   {
+      // check if the template file can be found under modules/module_name/templates
+      $tplfile = MODULE_PATH."/".str_replace('.','/',$packageName)."/templates/".$templateFile;
+      if (!file_exists($tplfile))
+         $tplfile = $templateFile;
+      return $tplfile;
+   }
 
    /**
     * BizSystem::GetLibFileWithPath()
-    * Get openbiz library php file path from /bin or /bin/usrlib
+    * Get openbiz library php file path by searching modules/package, /bin/package and /bin
     *
     * @param string $className
     * @return string php library file path
     **/
    public static function GetLibFileWithPath($className, $packageName="")
    {
-      //echo $packageName."::".$className.">>";
       if (!$className) return;
-      // search it in caceh first
+      // search it in cache first
       $cacheKey = $className."_path";
       if (extension_loaded('0') && ($filepath = apc_fetch($cacheKey)) != null)
          return $filepath;
@@ -335,39 +390,53 @@ class BizSystem
       $bFound = false;
       if ($packageName) {
          $path = str_replace(".", "/", $packageName);
-         $classfile = APP_HOME.'/bin/'.$path."/".$classfile;
-         if (file_exists($classfile))
+         // search in apphome/modules directory first, search in apphome/bin directory then
+         $classfiles[0] = MODULE_PATH."/".$path."/".$classfile;
+         $classfiles[1] = APP_HOME."/bin/".$path."/".$classfile;
+         foreach ($classfiles as $classfile)
          {
-            $filepath = $classfile;
-            $bFound = true;
+            if (file_exists($classfile))
+            {
+               $filepath = $classfile;
+               $bFound = true;
+               break;
+            }
          }
       }
       
       if (!$bFound)
-      {
-         // search in openbiz root
-         if (file_exists($classfile_0))
-            $filepath = $classfile_0;
-         else if (file_exists(OPENBIZ_BIN.$classfile_0))
-            $filepath = OPENBIZ_BIN.$classfile_0;
-         else if (file_exists(OPENBIZ_BIN.'service/'.$classfile_0))
-            $filepath = OPENBIZ_BIN.'service/'.$classfile_0;
-      }
+         $filepath = self::GetCoreLibFilePath($className);
       // cache it to save file search
       if ($filepath && extension_loaded('apc'))
          apc_store($cacheKey, $filepath);
       return $filepath;
    }
-
-   public static function LoadCoreLib($className)
+   
+   private static function GetCoreLibFilePath($className)
    {
-      $classfile = BizSystem::GetLibFileWithPath($className);
-      include_once($classfile);
+      $classfile = $className.'.php';
+      if (strpos($className, 'BizData') === 0 || $className == 'DataRecord' 
+          || $className == 'BizField')
+         $classfile = OPENBIZ_BIN.'data/'.$classfile;
+      else if (strpos($className, 'BizForm') === 0 || strpos($className, 'BizView') === 0
+               || strpos($className, 'HTML') === 0 || $className === 'FieldControl' || $className === 'RowSelector')
+         $classfile = OPENBIZ_BIN.'ui/'.$classfile;
+      else if (strpos(strrev($className), strrev('Service')) === 0)
+         $classfile = OPENBIZ_BIN.'service/'.$classfile;
+      else
+         $classfile = OPENBIZ_BIN.$classfile;
+         
+      if (file_exists($classfile))
+         return $classfile;
+      return null;
    }
 
    /**
     * BizSystem::GetXmlArray()
-    * Get Xml Array. If xml file has been compiled (has .cmp), load the cmp file as array; otherwise, compile the .xml to .cmp first
+    * Get Xml Array. If xml file has been compiled (has .cmp), load the cmp file as array; 
+    * otherwise, compile the .xml to .cmp first
+    * new 2.2.3, .cmp files will be created in app/cache/metadata_cmp directory. replace '/' with '_'
+    * for example, /module/demo/BOEvent.xml has cmp file as _module_demo_BOEvent.xml
     *
     * @param string $xmlFile
     * @return array
@@ -375,7 +444,9 @@ class BizSystem
    public static function &GetXmlArray($xmlFile)
    {
       $objXmlFileName = $xmlFile;
-      $objCmpFileName = dirname($objXmlFileName) . "/__cmp/" . basename($objXmlFileName, "xml") . ".cmp";
+      //$objCmpFileName = dirname($objXmlFileName) . "/__cmp/" . basename($objXmlFileName, "xml") . ".cmp";
+      $_crc32 = sprintf('%08X', crc32(dirname($objXmlFileName)));
+      $objCmpFileName = CACHE_METADATA_PATH.'/'.$_crc32 .'_' . basename($objXmlFileName, "xml") . "cmp";
 
       $xmlArr = null;
       //$cacheKey = substr($objXmlFileName, strlen(META_PATH)+1);
@@ -396,7 +467,7 @@ class BizSystem
          }
       }
       else {
-         include_once("xmltoarray.php");
+         include_once(OPENBIZ_BIN."util/xmltoarray.php");
          $parser = new XMLParser($objXmlFileName, 'file', 1);
          $xmlArr = $parser->getTree();
          $xmlArrStr = serialize($xmlArr);
@@ -412,7 +483,7 @@ class BizSystem
       }
       return $xmlArr;
    }
-
+   
    /**
     * BizSystem::GetMessage()
     * Get message resource

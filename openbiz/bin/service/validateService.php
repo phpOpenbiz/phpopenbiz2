@@ -134,6 +134,7 @@ class validateService
     */
    public function email($email) {
       require_once 'Zend/Validate/EmailAddress.php';
+      
       $validator = new Zend_Validate_EmailAddress();
       $result = $validator->isValid($email);
       return $result;
@@ -214,7 +215,7 @@ class validateService
    }
 
 
-   public function GetErrorMessage($validator) {
+   public function GetErrorMessage($validator, $fieldName) {
       $validator = str_replace('{@validate:', '', $validator);
       $pos1 = strpos($validator, '(');
       $type = substr($validator, 0, $pos1);
@@ -245,7 +246,7 @@ class validateService
          return 'Please enter a password containing atleast 8 characters using both upper and lower cases characters as well as atleast one digit.';
          break;
       }
-      return 'Please review the form for errors.';
+      return 'Please enter a valid '.$fieldName;
    }
 
 }

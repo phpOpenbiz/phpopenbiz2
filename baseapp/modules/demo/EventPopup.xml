@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+
+<BizForm Name="EventPopup" Package="demo" Class="BizFormPopup" jsClass="jbForm" Title="Select an event" SearchRule="" Description="Select an event" BizDataObj="BOEventX" Height="400" Width="600" PageSize="10">
+   <DisplayModes>
+      <Mode Name="QUERY" TemplateFile="edit.tpl" InitMode="" DataFormat="array"/>
+      <Mode Name="READ" TemplateFile="list.tpl" InitMode="" DataFormat="block" FormatStyle="tbl"/>
+   </DisplayModes>
+   <BizCtrlList>
+   <BizCtrl Name="evt_id" FieldName="Id" DisplayName="Event Id" Type="" Width="" Height="" HTMLAttr="" Function="" Hidden="" Enabled="" Order="" Style="" SelectBizForm="" SelectFrom="" DisplayMode=""/><BizCtrl Name="evt_name" FieldName="Name" DisplayName="Name" Type="" Width="" Height="" HTMLAttr="" Function="" Hidden="" Enabled="" Order="" Style="" SelectBizForm="" SelectFrom="" DisplayMode=""/></BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_select" Caption="Select" Type="Button" Style="" Function="AddToParent()" DisplayMode="READ"/>
+      <Control Name="btn_select" Caption="Join" Type="Button" Style="" Function="JoinToParent()" DisplayMode="READ"/>
+      <Control Name="btn_search" Caption="Search" Type="Button" Style="" Function="SearchRecord()" DisplayMode="READ"/>
+      <Control Name="btn_dosearch" Caption="Go" Type="Button" Style="" Function="RunSearch()" DisplayMode="QUERY"/>
+      <Control Name="btn_cancel" Caption="Cancel" Type="Button" Style="" Function="Cancel()" DisplayMode="QUERY"/>
+      <Control Name="btn_close" Image="" Caption="Close" Type="Button" Function="Close()"/>
+   </Toolbar> 
+   <Navbar>
+      <Control Name="btn_next" Image="next.gif" Caption="Next" Type="Button" Width="" Height="" HTMLAttr="" Function="NextPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+      <Control Name="btn_prev" Image="prev.gif" Caption="Previous" Type="Button" Width="" Height="" HTMLAttr="" Function="PrevPage()" Style="" Enabled="" DisplayMode="" Access=""/>
+   </Navbar> 
+</BizForm>

@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<BizForm Name="FMAttendeePopup" Package="demo" Class="BizFormPopup" jsClass="jbForm" InheritFrom="demo.FMAttendee" Title="Attendee" SearchRule="" Description="Attendee BizForm" BizDataObj="BOAttendeeX" Height="400" Width="600" PageSize="5">
+   <DisplayModes>
+   </DisplayModes>
+   <BizCtrlList>
+   </BizCtrlList>
+   <Toolbar>
+      <Control Name="btn_search" Caption="Search" Type="Button" Function="SearchRecord()" DisplayMode="READ" Access="READ"/>
+      <Control Name="btn_dosearch" Caption="Search" Type="button" Function="RunSearch()" DisplayMode="QUERY" Access=""/>
+      <Control Name="btn_sel" Caption="Add" Type="button" Function="AddToParent()" DisplayMode="READ" Access=""/>
+      <Control Name="btn_join" Caption="Join" Type="button" Function="JoinToParent()" DisplayMode="READ" Access=""/>
+      <Control Name="btn_new" Hidden="Y"/>
+      <Control Name="btn_delete" Hidden="Y"/>
+      <Control Name="btn_cancel" Caption="Cancel" Type="Button" Function="Cancel()" DisplayMode="EDIT|NEW|QUERY" Access="WRITE"/>
+      <Control Name="btn_close" Caption="Close" Type="Button" Function="Close()" DisplayMode="" Access=""/>
+      <Control Name="btn_edit" Hidden="Y"/>
+      <Control Name="btn_copy" Hidden="Y"/>
+      <Control Name="btn_refresh" Hidden="Y"/>
+      <Control Name="btn_report" Hidden="Y"/>
+      <Control Name="btn_excel" Hidden="Y"/>
+      <Control Name="btn_export" Hidden="Y"/>
+      <Control Name="btn_import" Hidden="Y"/>
+   </Toolbar> 
+   <Navbar>
+   </Navbar> 
+</BizForm>

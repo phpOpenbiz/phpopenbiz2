@@ -1,0 +1,31 @@
+<PluginService Name="BOEvent_Trigger" Description="" Package="demo" Class="service.doTriggerService" DataObjectName="BOEvent">
+   <DOTrigger TriggerType="UPDATE">
+      <!--<TriggerCondition Expression="{[Id]=='EVT_2'}" ExtraSearchRule="[Host]>'{[Host]}'" />-->
+      <TriggerCondition Expression="" ExtraSearchRule="" />
+      <TriggerActions>
+         <!--<TriggerAction Action="ExecuteSQL|ExecuteShell|CreateInboxItem|SendEmail" Immediate="Y|N" DelayMinutes="" RepeatMinutes="">-->
+         <!--<TriggerAction Name="RunSQL" Action="ExecuteSQL" Immediate="Y" DelayMinutes="" RepeatMinutes="" Description="">
+            <ActionArgument Name="DBName" Value="Default" />
+            <ActionArgument Name="SQL" Value="select * from regist where EVENT_ID='{[Id]}'" />
+         </TriggerAction>
+         <TriggerAction Name="RunDir" Action="ExecuteShell" Immediate="Y" DelayMinutes="" RepeatMinutes="" Description="">
+            <ActionArgument Name="Script" Value="dir" />
+            <ActionArgument Name="Inputs" Value=" > d:\temp\out.txt" />
+         </TriggerAction>
+         <TriggerAction Name="Email" Action="SendEmail" Immediate="Y" DelayMinutes="" RepeatMinutes="" Description="">
+            <ActionArgument Name="EmailService" Value="service.emailService" />
+            <ActionArgument Name="Account" Value="MyPhpopenbiz" />
+            <ActionArgument Name="TOs" Value="rockyswen@gmail.com; rockyswen@phpopenbiz.org" />
+            <ActionArgument Name="CCs" Value="" />
+            <ActionArgument Name="BCCs" Value="" />
+            <ActionArgument Name="Subject" Value="alert message" />
+            <ActionArgument Name="Body" Value="This is an alert message. \nPlease notice that the record with {[Id]} was updated." />
+            <ActionArgument Name="Attachments" Value="" />
+         </TriggerAction>
+         <TriggerAction Name="Audit" Action="AuditTrail" Immediate="Y" DelayMinutes="" RepeatMinutes="" Description="">
+            <ActionArgument Name="AuditService" Value="service.auditService" />
+            <ActionArgument Name="DataObjectName" Value="{@:Name}" />
+         </TriggerAction>-->
+      </TriggerActions>
+   </DOTrigger>
+</PluginService>
